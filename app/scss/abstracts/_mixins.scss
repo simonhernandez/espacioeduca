@@ -1,0 +1,65 @@
+/*
+    ------------------------
+    ------- Mixins ---------
+    ------------------------
+*/
+
+// Media Queries
+
+$breakpoints-up : (
+    "medium" : "640px",
+    "large" : "1024px",
+    "xlarge" : "1400px",
+);
+
+$breakpoints-down : (
+    "small" : "639px",
+    "medium" : "1023px",
+    "large" : "1399px",
+);
+
+@mixin breakpoint-up($size) {
+    @media screen and (min-width: map-get($map: $breakpoints-up, $key: $size)){
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size) {
+    @media screen and (max-width: map-get($map: $breakpoints-down, $key: $size)){
+        @content;
+    }
+}
+
+
+// Flexbox
+
+$justify-content : (
+    "sb" : space-between,
+    "sa" : space-around,
+    "se" : space-evenly,
+    "fs" : flex-start,
+    "fe" : flex-end,
+    "c" : center,
+);
+
+$align-items : (
+    "st" : stretch,
+    "b" : baseline,
+    "c" : center,
+    "fs" : flex-start,
+    "fe" : flex-end,
+);
+
+@mixin flex($jc, $ai, $direction) {
+    display: flex;
+    justify-content: map-get($map: $justify-content, $key: $jc);
+    align-items: map-get($map: $align-items, $key: $ai);
+    flex-direction: $direction;
+}
+
+
+// Background Images
+
+@mixin background-image($path, $position, $size) {
+    background: url(#{$path}) $position/$size no-repeat;
+}
