@@ -13,8 +13,8 @@
     --dim-blue: #D5E8FF;
     --ghost-blue: rgba(213, 232, 255, .1);
     --very-dim-blue: rgba(91, 176, 224, .4);
-    /* --cerulean-carola: #16ABD3;
-    --tiffany-blue: #07BEB8; */
+    // /* --cerulean-carola: #16ABD3;
+    // --tiffany-blue: #07BEB8; */
     // --dark-state-gray: #254441;
     --cultured: #FAFAFA;
     --white: #FFF;
@@ -27,15 +27,19 @@
 $backgroundColors:(
     "white" : var(--white),
     "gray"  : var(--cultured),
-    "blue"  : var(--ghost-blue)
+    "blue"  : var(--ghost-blue),
+    "green" : var(--dark-jungle-green)
 );
 
+$buttonColors : (
+    "background" : var(--orange),
+    "text"       : var(--white),
+    "shadow"     : var(--dim-orange)
+);
 
-
-
-.text-white{
-    color: var(--color-text-white);
-}
-.text-gray{
-    color: var(--color-text-gray-blue);
-}
+$textColors : (
+    "dark"   : var(--space-cadet),
+    "white"  : var(--white),
+    "orange" : var(--orange),
+    "blue"   : var(--blue)
+);
