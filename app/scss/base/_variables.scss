@@ -1,0 +1,32 @@
+/*
+    ------------------------
+    ------- Variables ------
+    ------------------------
+*/
+
+:root{
+    /* Buttons */
+    --button-border-radius: var(--space-1-xxx);
+    --button-border-width: 1px;
+
+    /* Border Radius */
+    --border-radius-menu: 5px;
+
+    /* Header height */
+    --header-height: var(--space-2);
+
+    /* Z Index */
+    --z-back   : -1;
+    --z-normal :  1;
+    --z-tooltip:  10;
+    --z-fixed  :  100;
+    --z-modal  :  1000;
+
+    /* Box Shadow */
+    --bxs-menu : 0 20px 40px rgba(0, 0, 0, .2434);
+    --bxs-quote: 0 10px 30px rgba(0, 0, 0, .08);
+    --bxs-card : 0 10px 30px rgba(0, 0, 0, .08);
+    --bxs-image: 0  8px 25px rgba(0, 0, 0, .25);
+    --bxs-line : 0  5px 94px rgba(91, 176, 224, .4);
+    --bxs-btn  : 0 15px 25px -10px rgba(255, 153, 0, .54);
+}
