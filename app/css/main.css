@@ -1,0 +1,281 @@
+/*
+    ------------------------
+    ------- Mixins ---------
+    ------------------------
+*/
+/*
+    ------------------------
+    ------ Utilities -------
+    ------------------------
+*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+@media screen and (max-width: 1023px) {
+  .hide-for-mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hide-for-desktop {
+    display: none !important;
+  }
+}
+
+/*
+    ------------------------
+    ------- Resets ---------
+    ------------------------
+*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/*
+    ------------------------
+    ------- Spacing --------
+    ------------------------
+*/
+:root {
+  --space-0: 0rem;
+  --space-0-x: 0.25rem;
+  --space-0-xx: 0.5rem;
+  --space-0-xxx: 0.75rem;
+  --space-1: 1rem;
+  --space-1-x: 1.25rem;
+  --space-1-xx: 1.5rem;
+  --space-1-xxx: 1.75rem;
+  --space-2: 2rem;
+  --space-2-x: 2.25rem;
+  --space-2-xx: 2.5rem;
+  --space-2-xxx: 2.75rem;
+  --space-3: 3rem;
+  --space-3-x: 3.25rem;
+  --space-3-xx: 3.5rem;
+  --space-3-xxx: 3.75rem;
+  --space-4: 4rem;
+  --space-4-x: 4.25rem;
+  --space-4-xx: 4.5rem;
+  --space-4-xxx: 4.75rem;
+  --space-5: 5rem;
+  --space-5-x: 5.25rem;
+  --space-5-xx: 5.5rem;
+  --space-5-xxx: 5.75rem;
+  --space-6: 6rem;
+  --space-6-x: 6.25rem;
+  --space-6-xx: 6.5rem;
+  --space-6-xxx: 6.75rem;
+  --space-7: 7rem;
+  --space-7-x: 7.25rem;
+  --space-7-xx: 7.5rem;
+  --space-7-xxx: 7.75rem;
+  --space-8: 8rem;
+  --space-8-x: 8.25rem;
+  --space-8-xx: 8.5rem;
+  --space-8-xxx: 8.75rem;
+  --space-9: 9rem;
+  --space-9-x: 9.25rem;
+  --space-9-xx: 9.5rem;
+  --space-9-xxx: 9.75rem;
+}
+
+/*
+    ------------------------
+    ------- Colors ---------
+    ------------------------
+*/
+:root {
+  --orange: #FF8B00;
+  --dim-orange: #FFEED5;
+  --very-dim-orange: rgba(255, 153, 0, .54);
+  --blue: #5BB0E0;
+  --dim-blue: #D5E8FF;
+  --ghost-blue: rgba(213, 232, 255, .1);
+  --very-dim-blue: rgba(91, 176, 224, .4);
+  --cultured: #FAFAFA;
+  --white: #FFF;
+  --space-cadet: #333950;
+  --dark-jungle-green: #11272B;
+}
+
+/*
+    ------------------------
+    ------- Variables ------
+    ------------------------
+*/
+:root {
+  /* Buttons */
+  --button-border-radius: var(--space-1-xxx);
+  --button-border-width: 1px;
+  /* Border Radius */
+  --border-radius-menu: 5px;
+  /* Header height */
+  --header-height: var(--space-2);
+  /* Z Index */
+  --z-back: -1;
+  --z-normal:  1;
+  --z-tooltip:  10;
+  --z-fixed:  100;
+  --z-modal:  1000;
+  /* Box Shadow */
+  --bxs-menu: 0 20px 40px rgba(0, 0, 0, .2434);
+  --bxs-quote: 0 10px 30px rgba(0, 0, 0, .08);
+  --bxs-card: 0 10px 30px rgba(0, 0, 0, .08);
+  --bxs-image: 0  8px 25px rgba(0, 0, 0, .25);
+  --bxs-line: 0  5px 94px rgba(91, 176, 224, .4);
+  --bxs-btn: 0 15px 25px -10px rgba(255, 153, 0, .54);
+}
+
+/*
+    ------------------------
+    ------ Typography ------
+    ------------------------
+*/
+/* Google Fonts */
+:root {
+  /* Font Family */
+  --ff-primary: 'Rubik', sans-serif;
+  /* Font Weight */
+  --fw-reg: 400;
+  --fw-med: 500;
+  --fw-bold: 700;
+  /* Font Size */
+  --fs-h1: 2.25rem;
+  --fs-h2: 1.125rem;
+  --fs-h3: 2rem;
+  --fs-h4: 1.25rem;
+  --fs-base: .9375rem;
+  --fs-sm: .875rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 2rem;
+  /* Line height */
+  --lh-h1: 2.8125rem;
+  --lh-h2: auto;
+  --lh-h3: 2.1875rem;
+  --lh-h4: auto;
+  --lh-base: 1.625rem;
+  --lh-sm: auto;
+  --lh-md: 2rem;
+  --lh-btn: 1.75rem;
+}
+
+/* Tablet & Desktop */
+@media screen and (min-width: 640px) {
+  :root {
+    /* Font Size */
+    --fs-h1: 4rem;
+    --fs-h2: 1.5rem;
+    --fs-h3: 3.25rem;
+    --fs-h4: 1.5rem;
+    /* Line height */
+    --lh-h1: 4.3125rem;
+    --lh-h2: auto;
+    --lh-h3: 3.875rem;
+  }
+}
+
+body {
+  font-family: var(--ff-primary);
+}
+
+.heading {
+  font-weight: var(--fw-bold);
+}
+
+.heading--1 {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+}
+
+.heading--2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+}
+
+.heading--3 {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+}
+
+.paragraph {
+  font-size: var(--fs-base);
+  line-height: var(--lh-base);
+}
+
+/* .btn, .nav{
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-bold);
+}
+
+.btn{
+    font-size: var(--fs-base);
+    line-height: var(--lh-btn);
+}
+
+.nav{
+    &__item,
+    &__subitem{
+        font-family: var(--ff-primary);
+        font-size: var(--fs-md);
+        font-weight: var(--fw-semi-bold);
+        line-height: var(--lh-md);
+    }
+
+    &__subitem{
+        color: rgba(31, 62, 90, .75);
+        font-size: var(--fs-base);
+    }
+
+    @include breakpoint-up(large){
+        &__subitem{
+            font-family: var(--ff-secondary);
+            font-weight: var(--fw-reg);
+            &:hover{
+                font-weight: var(--fw-bold);
+            }
+        }
+    }
+}
+
+.footer{
+    &__item{
+        &:first-of-type{
+            color: var(--color-text-white);
+            font-weight: var(--fw-med);
+        }
+    }
+} */
+/*# sourceMappingURL=main.css.map */
