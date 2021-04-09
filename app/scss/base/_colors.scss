@@ -52,6 +52,6 @@ $textColors : (
     background-color: map-get($map: $backgroundColors, $key: $name);
 }
 
-@mixin color($name) {
+@mixin textColor($name) {
     color: map-get($map: $textColors, $key: $name);
 }

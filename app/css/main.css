@@ -468,6 +468,64 @@ body {
 
 /*
     ------------------------
+    --------- Hero ---------
+    ------------------------
+*/
+.hero {
+  background-color: var(--color-primary-very-light);
+}
+
+.hero__text-container {
+  text-align: center;
+}
+
+.hero__text-container > *:not(:last-child) {
+  margin-bottom: var(--space-1);
+}
+
+.hero__text-container .heading span {
+  color: cyan;
+}
+
+.hero__image-container {
+  max-width: 650px;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 1100px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .hero__image-container {
+    max-width: 673px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .hero__text-container {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+/*
+    ------------------------
     --------- Home ---------
     ------------------------
 */
