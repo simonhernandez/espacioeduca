@@ -17,6 +17,17 @@
     .nav{
         @include flex(sb, c, row);
         height: 100%;
+
+        &__logo{
+            @include flex(fs, c, row);
+            img{
+                max-width: 2rem;
+            }
+            span{
+                font-size: 1.125rem;
+                font-weight: var(--fw-bold);
+            }
+        }
     
         @include breakpoint-down(small){
     
