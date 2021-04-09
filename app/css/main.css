@@ -293,8 +293,8 @@ body {
 }
 
 .btn--primary {
-  /* @include bgColor(btn-primary);
-        @include textColor(btn-primary); */
+  background-color: #FF8B00;
+  color: #FFF;
   -webkit-box-shadow: var(--bxs-btn);
           box-shadow: var(--bxs-btn);
 }
@@ -305,8 +305,8 @@ body {
 }
 
 .btn--secondary {
-  /* @include bgColor(btn-secondary);
-        @include textColor(btn-secondary); */
+  background-color: #FFF;
+  color: #FF8B00;
 }
 
 .btn--secondary:hover, .btn--secondary:focus {
@@ -372,7 +372,8 @@ body {
     ------------------------
 */
 .header {
-  /* @include bgColor(header); */
+  background-color: #FFF;
+  color: #333950;
 }
 
 .header .nav {
@@ -471,8 +472,8 @@ body {
 */
 .hero {
   background-color: var(--color-primary-very-light);
-  background-color: #11272B;
-  color: #5BB0E0;
+  background-color: #FFF;
+  color: #333950;
 }
 
 .hero__text-container {

@@ -6,19 +6,14 @@
 
 .hero{
     background-color: var(--color-primary-very-light);
-    @include bgColor(hero);
+    background-color: setBackgroundColor(section-hero);
+    color: setTextColor(section-hero);
 
     &__text-container{
         text-align: center;
 
         > *:not(:last-child){
             margin-bottom: var(--space-1);
-        }
-
-        .heading{
-            span{
-                @include textColor(orange);
-            }
         }
     }
 
