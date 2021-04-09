@@ -565,6 +565,14 @@ body {
   margin-bottom: var(--space-2-xx);
 }
 
+.sponsors__item {
+  margin: 0 auto;
+}
+
+.sponsors__item--ideas, .sponsors__item--mercantil {
+  max-width: 81px;
+}
+
 /*
     ------------------------
     --------- Home ---------

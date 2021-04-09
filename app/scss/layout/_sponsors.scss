@@ -13,4 +13,12 @@
             margin-bottom: var(--space-2-xx);
         }
     }
+
+    &__item{
+        margin: 0 auto;
+        &--ideas,
+        &--mercantil{
+            max-width: 81px;
+        }
+    }
 }
