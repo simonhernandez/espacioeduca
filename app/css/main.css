@@ -483,10 +483,6 @@ body {
   margin-bottom: var(--space-1);
 }
 
-.hero__text-container .heading span {
-  color: cyan;
-}
-
 .hero__image-container {
   max-width: 650px;
   margin-left: auto;
