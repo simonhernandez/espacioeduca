@@ -5,9 +5,27 @@
 */
 
 .about{
+    position: relative;
+    z-index: var(--z-back);
     background-color: setBackgroundColor(section-about);
     color: setTextColor(section-about);
     padding: var(--space-2-xx) 0;
+
+    &::before,
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+    }
+
+    &::before{
+        top: 0;
+        left: 0;
+        z-index: var(--z-back);
+        width: 145px;
+        height: 65px;
+        @include background-image('../../../assets/images/shape-dots-blue.svg', center top, cover)
+    }
 
     &__image-container{
         max-width: 300px;
@@ -21,6 +39,12 @@
 
         > *:not(:last-child){
             margin-bottom: var(--space-1-x);
+        }
+    }
+
+    &__list{
+        > *:not(:last-child){
+            margin-bottom: var(--space-2);
         }
     }
 }
