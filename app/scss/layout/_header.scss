@@ -12,7 +12,8 @@
     // right: 0;
     // z-index: var(--z-fixed);
     // box-shadow: var(--bxs-header);
-    @include bgColor(header);
+    background-color: setBackgroundColor(header);
+    color: setTextColor(header);
 
     .nav{
         @include flex(sb, c, row);
