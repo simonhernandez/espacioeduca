@@ -1,0 +1,37 @@
+/*
+    ------------------------
+    -------- Quote ---------
+    ------------------------
+*/
+
+.quote{
+    position: relative;
+    padding: var(--space-4-x) var(--space-2) var(--space-1);
+    box-shadow: var(--bxs-quote);
+    border-radius: 15px;
+
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: var(--space-2);
+        width: 67px;
+        height: 56px;
+        @include background-image('../../../assets/images/shape-quotes.svg', center top, cover)
+    }
+
+    blockquote{
+        margin-bottom: var(--space-1);
+    }
+
+    figcaption{
+        @include flex(fs, c, row);
+
+    }
+
+    &__avatar{
+        max-width: 50px;
+        margin-right: var(--space-1);
+    }
+}

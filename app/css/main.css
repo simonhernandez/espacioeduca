@@ -323,6 +323,55 @@ body {
   color: var(--color-text-white);
 }
 
+/*
+    ------------------------
+    -------- Quote ---------
+    ------------------------
+*/
+.quote {
+  position: relative;
+  padding: var(--space-4-x) var(--space-2) var(--space-1);
+  -webkit-box-shadow: var(--bxs-quote);
+          box-shadow: var(--bxs-quote);
+  border-radius: 15px;
+}
+
+.quote::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: var(--space-2);
+  width: 67px;
+  height: 56px;
+  background: url(../../../assets/images/shape-quotes.svg) center top/cover no-repeat;
+}
+
+.quote blockquote {
+  margin-bottom: var(--space-1);
+}
+
+.quote figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.quote__avatar {
+  max-width: 50px;
+  margin-right: var(--space-1);
+}
+
 .sponsors__list {
   max-width: 165px;
   margin: 0 auto;
