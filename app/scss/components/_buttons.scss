@@ -6,7 +6,7 @@
 
 .btn{
     display: inline-block;
-    padding: calc(var(--space-1) * 1.125) var(--space-1-xx);
+    padding: calc(var(--space-1) * .875) var(--space-2-xxx);
     border-radius: var(--button-border-radius);
 
     &--primary{
