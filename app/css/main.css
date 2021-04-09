@@ -117,18 +117,12 @@ button {
     ------- Colors ---------
     ------------------------
 */
-:root {
-  --orange: #FF8B00;
-  --dim-orange: #FFEED5;
-  --very-dim-orange: rgba(255, 153, 0, .54);
-  --blue: #5BB0E0;
-  --dim-blue: #D5E8FF;
-  --ghost-blue: rgba(213, 232, 255, .1);
-  --very-dim-blue: rgba(91, 176, 224, .4);
-  --cultured: #FAFAFA;
-  --white: #FFF;
-  --space-cadet: #333950;
-  --dark-jungle-green: #11272B;
+.text-gray {
+  color: rgba(38, 39, 41, 0.7);
+}
+
+.text-dim-white {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /*
@@ -299,8 +293,8 @@ body {
 }
 
 .btn--primary {
-  background-color: var(--orange);
-  color: var(--white);
+  /* @include bgColor(btn-primary);
+        @include textColor(btn-primary); */
   -webkit-box-shadow: var(--bxs-btn);
           box-shadow: var(--bxs-btn);
 }
@@ -311,8 +305,8 @@ body {
 }
 
 .btn--secondary {
-  background-color: var(--white);
-  color: var(--orange);
+  /* @include bgColor(btn-secondary);
+        @include textColor(btn-secondary); */
 }
 
 .btn--secondary:hover, .btn--secondary:focus {
@@ -377,6 +371,10 @@ body {
     -------- Header --------
     ------------------------
 */
+.header {
+  /* @include bgColor(header); */
+}
+
 .header .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -473,6 +471,8 @@ body {
 */
 .hero {
   background-color: var(--color-primary-very-light);
+  background-color: #11272B;
+  color: #5BB0E0;
 }
 
 .hero__text-container {

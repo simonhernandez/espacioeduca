@@ -78,6 +78,11 @@ $colors : (
     @return $textColor;
 }
 
+@function setBackgroundColor($component) {
+    $backgroundColor : map-get($map: map-get($map: $colors, $key: $component), $key: background);
+    @return $backgroundColor;
+}
+
 .text-gray{
     color: $gray;
 }
