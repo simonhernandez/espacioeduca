@@ -445,11 +445,6 @@ body {
   color: var(--color-primary);
 }
 
-.header .nav__toggle {
-  width: 1.25rem;
-  height: 1rem;
-}
-
 @media screen and (min-width: 640px) {
   .header .nav__list {
     display: -webkit-box;
