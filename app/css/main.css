@@ -676,6 +676,53 @@ body {
 
 /*
     ------------------------
+    --------- Team ---------
+    ------------------------
+*/
+.team {
+  position: relative;
+  z-index: var(--z-back);
+  background-color: #FFF;
+  color: #333950;
+  padding: var(--space-2-xx) 0;
+}
+
+.team::before, .team::after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+.team::before {
+  top: 0;
+  left: 0;
+  z-index: var(--z-back);
+  width: 145px;
+  height: 65px;
+  background: url(../../../assets/images/shape-dots-blue.svg) center top/cover no-repeat;
+}
+
+.team__image-container {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: var(--space-2-xxx);
+}
+
+.team__text-container {
+  text-align: center;
+  margin-bottom: var(--space-5);
+}
+
+.team__text-container > *:not(:last-child) {
+  margin-bottom: var(--space-1-x);
+}
+
+.team__list > *:not(:last-child) {
+  margin-bottom: var(--space-2);
+}
+
+/*
+    ------------------------
     --------- Home ---------
     ------------------------
 */
