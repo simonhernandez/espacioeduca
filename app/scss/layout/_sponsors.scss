@@ -5,20 +5,6 @@
 */
 
 .sponsors{
-    &__list{
-        max-width: 165px;
-        margin: 0 auto;
-
-        > *:not(:last-child){
-            margin-bottom: var(--space-2-xx);
-        }
-    }
-
-    &__item{
-        margin: 0 auto;
-        &--ideas,
-        &--mercantil{
-            max-width: 81px;
-        }
-    }
+    background-color: setBackgroundColor(section-sponsors);
+    padding: var(--space-2-xx) 0;
 }
