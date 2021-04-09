@@ -1,0 +1,83 @@
+/*
+    ------------------------
+    -------- Form ----------
+    ------------------------
+*/
+
+.form{
+
+    [type="text"],
+    [type="password"],
+    [type="email"],
+    textarea{
+        padding: var(--space-0-x) var(--space-0-xx);
+        background-color: var(--color-input-bg);
+        border-radius: .25rem;
+        width: 100%;
+
+        &:focus{
+            // border-color: var(--color-primary);
+            // outline-color: var(--color-primary);
+        }
+    }
+
+    & > *:not(:last-child){
+        margin-bottom: 1.5rem;
+    }
+
+
+    @include breakpoint-up(medium){
+        max-width: 33.75rem;
+
+        /* Reset Bottom Margins */
+        & > *:not(:last-child){
+            margin-bottom: initial;
+        }
+
+        /* Grid Properties */
+
+        display: grid;
+        grid-template-areas: "title title"
+                             "name email"
+                             "subject subject"
+                             "message message"
+                             "btn status";
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+        // Grid Area Declarations
+
+        .heading{
+
+            &--3{
+                grid-area: title;
+            }
+        }
+
+        &__control{
+
+            &--name{
+                grid-area: name;
+            }
+            &--email{
+                grid-area: email;
+            }
+            &--subject{
+                grid-area: subject;
+            }
+            &--text{
+                grid-area: message;
+            }
+        }
+
+        &__status{
+            grid-area: status;
+        }
+
+        .btn{
+            grid-area: btn;
+            width: 70%;
+        }
+    }
+}

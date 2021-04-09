@@ -325,6 +325,81 @@ body {
 
 /*
     ------------------------
+    -------- Form ----------
+    ------------------------
+*/
+.form [type="text"],
+.form [type="password"],
+.form [type="email"],
+.form textarea {
+  padding: var(--space-0-x) var(--space-0-xx);
+  background-color: var(--color-input-bg);
+  border-radius: .25rem;
+  width: 100%;
+}
+
+.form > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 640px) {
+  .form {
+    max-width: 33.75rem;
+    /* Reset Bottom Margins */
+    /* Grid Properties */
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "title title" "name email" "subject subject" "message message" "btn status";
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .form > *:not(:last-child) {
+    margin-bottom: initial;
+  }
+  .form .heading--3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: title;
+  }
+  .form__control--name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: name;
+  }
+  .form__control--email {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: email;
+  }
+  .form__control--subject {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: subject;
+  }
+  .form__control--text {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: message;
+  }
+  .form__status {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    grid-area: status;
+  }
+  .form .btn {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: btn;
+    width: 70%;
+  }
+}
+
+/*
+    ------------------------
     -------- Quote ---------
     ------------------------
 */
