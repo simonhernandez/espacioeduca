@@ -12,6 +12,7 @@
     &--primary{
         @include bgColor(btn-primary);
         @include color(btn-primary);
+        box-shadow: var(--bxs-btn);
 
         &:hover,
         &:focus{

@@ -292,6 +292,8 @@ body {
 .btn--primary {
   background-color: var(--orange);
   color: var(--white);
+  -webkit-box-shadow: var(--bxs-btn);
+          box-shadow: var(--bxs-btn);
 }
 
 .btn--primary:hover, .btn--primary:focus {
