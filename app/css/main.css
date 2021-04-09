@@ -847,6 +847,92 @@ body {
 
 /*
     ------------------------
+    ------- Contact --------
+    ------------------------
+*/
+.contact {
+  position: relative;
+  z-index: var(--z-back);
+  padding-top: var(--space-5-xxx);
+  background-color: #FAFAFA;
+  color: #333950;
+}
+
+.contact::before, .contact::after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+.contact::before {
+  top: 0;
+  left: 0;
+  z-index: var(--z-back);
+  width: 145px;
+  height: 65px;
+  background: url(../../../assets/images/shape-dots-blue.svg) center top/cover no-repeat;
+}
+
+.contact__card {
+  background-color: #FF8B00;
+  color: #FFF;
+  border-radius: 15px;
+  padding: var(--space-2) var(--space-1-xx);
+}
+
+.contact__text-container {
+  text-align: center;
+  margin-bottom: var(--space-1-xx);
+}
+
+.contact__text-container .heading--2 {
+  margin-bottom: var(--space-1);
+}
+
+.contact__text-container .heading--3 {
+  margin-bottom: var(--space-2);
+}
+
+.contact__address-container {
+  margin-bottom: var(--space-2);
+}
+
+.contact__address-container > *:not(:last-child) {
+  margin-bottom: var(--space-1);
+}
+
+.contact__phone, .contact__email {
+  text-align: center;
+}
+
+.contact__phone > :not(:last-child), .contact__email > :not(:last-child) {
+  margin-bottom: var(--space-1);
+}
+
+.contact__icon {
+  background-color: #FFEED5;
+  color: #FF8B00;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/*
+    ------------------------
     --------- Home ---------
     ------------------------
 */

@@ -1,0 +1,73 @@
+/*
+    ------------------------
+    ------- Contact --------
+    ------------------------
+*/
+
+.contact{
+    position: relative;
+    z-index: var(--z-back);
+    padding-top: var(--space-5-xxx);
+    background-color: setBackgroundColor(section-contact);
+    color: setTextColor(section-contact);
+
+    &::before,
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+    }
+
+    &::before{
+        top: 0;
+        left: 0;
+        z-index: var(--z-back);
+        width: 145px;
+        height: 65px;
+        @include background-image('../../../assets/images/shape-dots-blue.svg', center top, cover)
+    }
+    
+    &__card{
+        background-color: setBackgroundColor(contact-card);
+        color: setTextColor(contact-card);
+        border-radius: 15px;
+        padding: var(--space-2) var(--space-1-xx);
+    }
+
+    &__text-container{
+        text-align: center;
+        margin-bottom: var(--space-1-xx);
+        .heading--2{
+            margin-bottom: var(--space-1);
+        }
+        .heading--3{
+            margin-bottom: var(--space-2);
+        }
+    }
+
+    &__address-container{
+        margin-bottom: var(--space-2);
+
+        >*:not(:last-child){
+            margin-bottom: var(--space-1);
+        }
+    }
+
+    &__phone,
+    &__email{
+        text-align: center;
+        >:not(:last-child){
+            margin-bottom: var(--space-1);
+        }
+    }
+
+    &__icon{
+        background-color: setBackgroundColor(icon-orange);
+        color: setTextColor(icon-orange);
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        margin: 0 auto;
+        @include flex(c, c, row);
+    }
+}
