@@ -1,0 +1,33 @@
+/*
+    ------------------------
+    --------- Card ---------
+    ------------------------
+*/
+
+.card{
+    padding: var(--space-2);
+    box-shadow: var(--bxs-card);
+    border-radius: 12px;
+
+    &__icon{
+        width: 64px;
+        height: 64px;
+        border-radius: 5px;
+        margin: 0 auto;
+        margin-bottom: var(--space-2);
+        box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
+        background-color: setBackgroundColor(icon-orange);
+        color: setTextColor(icon-orange);
+        @include flex(c, c, row);
+    }
+
+    &__text{
+        text-align: center;
+        .heading{
+            margin-bottom: var(--space-1-xx);
+        }
+    }
+
+
+
+}
