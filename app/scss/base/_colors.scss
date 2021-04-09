@@ -43,3 +43,11 @@ $textColors : (
     "orange" : var(--orange),
     "blue"   : var(--blue)
 );
+
+@mixin bgColor($name) {
+    background-color: map-get($map: $backgroundColors, $key: $name);
+}
+
+@mixin color($name) {
+    color: map-get($map: $textColors, $key: $name);
+}
