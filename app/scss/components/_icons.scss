@@ -5,7 +5,15 @@
 */
 
 .bx{
-    &-menu{
+    &-menu,
+    &-target-lock{
         font-size: 2rem;
+    }
+}
+
+.bxs{
+    &-layer,
+    &-book{
+        font-size: 1.8rem;
     }
 }

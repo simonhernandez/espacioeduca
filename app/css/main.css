@@ -282,8 +282,12 @@ body {
     -------- Icons ---------
     ------------------------
 */
-.bx-menu {
+.bx-menu, .bx-target-lock {
   font-size: 2rem;
+}
+
+.bxs-layer, .bxs-book {
+  font-size: 1.8rem;
 }
 
 /*
