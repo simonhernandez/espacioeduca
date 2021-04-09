@@ -25,10 +25,12 @@
 
 
 $backgroundColors:(
-    "white" : var(--white),
-    "gray"  : var(--cultured),
-    "blue"  : var(--ghost-blue),
-    "green" : var(--dark-jungle-green)
+    "white"         : var(--white),
+    "gray"          : var(--cultured),
+    "blue"          : var(--ghost-blue),
+    "green"         : var(--dark-jungle-green),
+    "btn-primary"   : var(--orange),
+    "btn-secondary" : var(--white),
 );
 
 $buttonColors : (
@@ -38,10 +40,12 @@ $buttonColors : (
 );
 
 $textColors : (
-    "dark"   : var(--space-cadet),
-    "white"  : var(--white),
-    "orange" : var(--orange),
-    "blue"   : var(--blue)
+    "dark"          : var(--space-cadet),
+    "light"         : var(--white),
+    "orange"        : var(--orange),
+    "blue"          : var(--blue),
+    "btn-primary"   : var(--white),
+    "btn-secondary" : var(--orange)
 );
 
 @mixin bgColor($name) {
