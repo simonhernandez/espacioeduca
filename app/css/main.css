@@ -476,13 +476,38 @@ body {
     ------------------------
 */
 .hero {
-  background-color: var(--color-primary-very-light);
   background-color: #FFF;
   color: #333950;
+  padding-bottom: var(--space-2-xx);
+}
+
+.hero::before, .hero::after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+.hero::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background: url(../../../assets/images/shape-circle-hero.svg) center top/cover no-repeat;
+}
+
+.hero::after {
+  top: 100%;
+  right: 0;
+  width: 145px;
+  height: 65px;
+  background: url(../../../assets/images/shape-dots-blue.svg) center top/cover no-repeat;
 }
 
 .hero__text-container {
   text-align: center;
+  margin-bottom: var(--space-1);
+  position: relative;
+  z-index: var(--z-tooltip);
 }
 
 .hero__text-container > *:not(:last-child) {
@@ -490,8 +515,8 @@ body {
 }
 
 .hero__image-container {
-  max-width: 650px;
-  margin-left: auto;
+  position: relative;
+  z-index: var(--z-tooltip);
 }
 
 @media screen and (min-width: 1100px) {
