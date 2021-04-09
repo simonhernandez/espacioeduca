@@ -322,6 +322,58 @@ body {
 
 /*
     ------------------------
+    ------- Wrapper --------
+    ------------------------
+*/
+.wrapper {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  max-width: 327px;
+  display: inherit;
+  -ms-grid-columns: inherit;
+      grid-template-columns: inherit;
+  -ms-grid-rows: inherit;
+      grid-template-rows: inherit;
+      grid-template-areas: inherit;
+  gap: inherit;
+  -webkit-column-gap: inherit;
+          column-gap: inherit;
+  row-gap: inherit;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+      -ms-flex-direction: inherit;
+          flex-direction: inherit;
+  /* Tablet */
+  /* Desktop */
+}
+
+@media screen and (min-width: 640px) {
+  .wrapper {
+    max-width: 573px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    max-width: 940px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapper {
+    max-width: 1110px;
+  }
+}
+
+/*
+    ------------------------
     -------- Header --------
     ------------------------
 */

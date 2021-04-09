@@ -1,0 +1,37 @@
+/*
+    ------------------------
+    ------- Wrapper --------
+    ------------------------
+*/
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-width: 327px;
+
+    display: inherit;
+    grid-template-columns: inherit;
+    grid-template-rows: inherit;
+    grid-template-areas: inherit;
+    gap: inherit;
+    column-gap: inherit;
+    row-gap: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-direction: inherit;
+
+    /* Tablet */
+    @include breakpoint-up(medium){
+        max-width: 573px;
+    }
+
+    /* Desktop */
+    @include breakpoint-up(large){
+        max-width: 940px;
+    }
+
+    @include breakpoint-up(xlarge){
+        max-width: 1110px;
+    }
+}
