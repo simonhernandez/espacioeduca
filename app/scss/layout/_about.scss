@@ -1,0 +1,26 @@
+/*
+    ------------------------
+    -------- About ---------
+    ------------------------
+*/
+
+.about{
+    background-color: setBackgroundColor(section-about);
+    color: setTextColor(section-about);
+    padding: var(--space-2-xx) 0;
+
+    &__image-container{
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: var(--space-2-xxx);
+    }
+
+    &__text-container{
+        text-align: center;
+        margin-bottom: var(--space-5);
+
+        > *:not(:last-child){
+            margin-bottom: var(--space-1-x);
+        }
+    }
+}

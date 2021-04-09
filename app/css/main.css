@@ -580,6 +580,32 @@ body {
 
 /*
     ------------------------
+    -------- About ---------
+    ------------------------
+*/
+.about {
+  background-color: #FFF;
+  color: #333950;
+  padding: var(--space-2-xx) 0;
+}
+
+.about__image-container {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: var(--space-2-xxx);
+}
+
+.about__text-container {
+  text-align: center;
+  margin-bottom: var(--space-5);
+}
+
+.about__text-container > *:not(:last-child) {
+  margin-bottom: var(--space-1-x);
+}
+
+/*
+    ------------------------
     --------- Home ---------
     ------------------------
 */
