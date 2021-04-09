@@ -553,6 +553,20 @@ body {
 
 /*
     ------------------------
+    ------ Sponsors --------
+    ------------------------
+*/
+.sponsors__list {
+  max-width: 165px;
+  margin: 0 auto;
+}
+
+.sponsors__list > *:not(:last-child) {
+  margin-bottom: var(--space-2-xx);
+}
+
+/*
+    ------------------------
     --------- Home ---------
     ------------------------
 */
