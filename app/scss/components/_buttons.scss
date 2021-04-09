@@ -10,8 +10,8 @@
     border-radius: var(--button-border-radius);
 
     &--primary{
-        @include bgColor(btn-primary);
-        @include textColor(btn-primary);
+        background-color: setBackgroundColor(btn-primary);
+        color: setTextColor(btn-primary);
         box-shadow: var(--bxs-btn);
 
         &:hover,
@@ -22,8 +22,8 @@
     }
 
     &--secondary{
-        @include bgColor(btn-secondary);
-        @include textColor(btn-secondary);
+        background-color: setBackgroundColor(btn-secondary);
+        color: setTextColor(btn-secondary);
 
         &:hover,
         &:focus{
