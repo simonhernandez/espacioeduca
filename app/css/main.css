@@ -310,4 +310,78 @@ body {
   background-color: var(--color-bg-cta-hover);
   color: var(--color-text-white);
 }
+
+/*
+    ------------------------
+    -------- Header --------
+    ------------------------
+*/
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+}
+
+@media screen and (max-width: 639px) {
+  .header .nav__list {
+    position: fixed;
+    top: var(--header-height);
+    right: -80%;
+    width: 80%;
+    height: 100%;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 2rem;
+    -webkit-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+  }
+}
+
+.header .nav__item {
+  padding: var(--space-xxxs) var(--space-xs);
+  border-radius: var(--space-xxxs);
+  text-align: center;
+  line-height: 1;
+}
+
+.header .nav__item:hover {
+  color: var(--color-primary);
+}
+
+.header .nav__toggle {
+  width: 1.25rem;
+  height: 1rem;
+}
+
+@media screen and (min-width: 640px) {
+  .header .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header .nav__item:not(:last-of-type) {
+    margin-right: 1.5rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
