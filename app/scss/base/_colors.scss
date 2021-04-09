@@ -4,54 +4,84 @@
     ------------------------
 */
 
-:root{
+$orange: #FF8B00;
+$dim-orange: #FFEED5;
+$very-dim-orange: rgba(255, 153, 0, .54);
+$blue: #5BB0E0;
+$dim-blue: #D5E8FF;
+$ghost-blue: rgba(213, 232, 255, .1);
+$very-dim-blue: rgba(91, 176, 224, .4);
+$cultured: #FAFAFA;
+$white: #FFF;
+$dim-white: rgba(255, 255, 255, .7);
+$space-cadet: #333950;
+$dark-jungle-green: #11272B;
+$gray: rgba(38, 39, 41, .7);
 
-    --orange: #FF8B00;
-    --dim-orange: #FFEED5;
-    --very-dim-orange: rgba(255, 153, 0, .54);
-    --blue: #5BB0E0;
-    --dim-blue: #D5E8FF;
-    --ghost-blue: rgba(213, 232, 255, .1);
-    --very-dim-blue: rgba(91, 176, 224, .4);
-    // /* --cerulean-carola: #16ABD3;
-    // --tiffany-blue: #07BEB8; */
-    // --dark-state-gray: #254441;
-    --cultured: #FAFAFA;
-    --white: #FFF;
-    --space-cadet: #333950;
-    --dark-jungle-green: #11272B;
-    // --non-photo-blue: #9CDCED;
+$colors : (
+    btn-primary : (
+        background : $orange,
+        text : $white,
+    ),
+    btn-secondary : (
+        background : $white,
+        text : $orange,
+    ),
+    icon-orange : (
+        background : $dim-orange,
+        text : $orange,
+    ),
+    icon-blue : (
+        background : $dim-blue,
+        text : $blue,
+    ),
+    contact-card : (
+        background : $orange,
+        text : $white,
+    ),
+    theme-light : (
+        background: $white,
+        text: $space-cadet,
+    ),
+    section-hero : (
+        background: $white,
+        text: $space-cadet,
+    ),
+    section-sponsors : (
+        background: $cultured,
+        text: $space-cadet,
+    ),
+    section-about : (
+        background: $white,
+        text: $space-cadet,
+    ),
+    section-proposal : (
+        background: $ghost-blue,
+        text: $space-cadet,
+    ),
+    section-team : (
+        background: $cultured,
+        text: $space-cadet,
+    ),
+    section-contact : (
+        background: $cultured,
+        text: $space-cadet,
+    ),
+    footer : (
+        background: $dark-jungle-green,
+        text: $white
+    ),
+);
+
+@function setTextColor($component) {
+    $textColor : map-get($map: map-get($map: $colors, $key: $component), $key: text);
+    @return $textColor;
 }
 
-
-$backgroundColors:(
-    "white"         : var(--white),
-    "gray"          : var(--cultured),
-    "blue"          : var(--ghost-blue),
-    "green"         : var(--dark-jungle-green),
-    "btn-primary"   : var(--orange),
-    "btn-secondary" : var(--white),
-);
-
-$buttonColors : (
-    "background" : var(--orange),
-    "text"       : var(--white),
-    "shadow"     : var(--dim-orange)
-);
-
-$textColors : (
-    "dark"          : var(--space-cadet),
-    "light"         : var(--white),
-    "orange"        : var(--orange),
-    "blue"          : var(--blue),
-    "btn-primary"   : var(--white),
-    "btn-secondary" : var(--orange)
-);
-
-@mixin bgColor($name) {
-    background-color: map-get($map: $backgroundColors, $key: $name);
+.text-gray{
+    color: $gray;
 }
 
-@mixin textColor($name) {
-    color: map-get($map: $textColors, $key: $name);
+.text-dim-white{
+    color: $dim-white;
 }
