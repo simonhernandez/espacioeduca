@@ -1,0 +1,23 @@
+/*
+    ------------------------
+    ------- Buttons --------
+    ------------------------
+*/
+
+.btn{
+    display: inline-block;
+    padding: calc(var(--space-1) * 1.125) var(--space-1-xx);
+    border-radius: var(--button-border-radius);
+
+    &--primary{
+        background-color: var(--orange);
+        color: var(--white);
+
+        &:hover,
+        &:focus{
+            background-color: var(--color-bg-cta-hover);
+            color: var(--color-text-white);
+        }
+    }
+
+}
