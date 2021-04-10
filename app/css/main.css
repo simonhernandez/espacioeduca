@@ -65,6 +65,16 @@ button {
   cursor: pointer;
 }
 
+input,
+textarea {
+  border: none;
+  font-family: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
 /*
     ------------------------
     ------- Spacing --------
