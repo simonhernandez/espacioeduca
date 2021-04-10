@@ -902,7 +902,7 @@ body {
 }
 
 .contact__address-container > *:not(:last-child) {
-  margin-bottom: var(--space-1);
+  margin-bottom: var(--space-1-xx);
 }
 
 .contact__phone, .contact__email {
@@ -910,7 +910,7 @@ body {
 }
 
 .contact__phone > :not(:last-child), .contact__email > :not(:last-child) {
-  margin-bottom: var(--space-1);
+  margin-bottom: var(--space-0-xx);
 }
 
 .contact__icon {
