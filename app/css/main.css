@@ -347,9 +347,18 @@ body {
 .form [type="email"],
 .form textarea {
   padding: var(--space-0-x) var(--space-0-xx);
-  background-color: var(--color-input-bg);
+  background-color: #FFF;
+  color: rgba(38, 39, 41, 0.7);
   border-radius: .25rem;
   width: 100%;
+}
+
+.form [type="text"]:focus,
+.form [type="password"]:focus,
+.form [type="email"]:focus,
+.form textarea:focus {
+  -webkit-box-shadow: 0 0 3px #11272B;
+          box-shadow: 0 0 3px #11272B;
 }
 
 .form > *:not(:last-child) {

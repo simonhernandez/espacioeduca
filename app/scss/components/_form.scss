@@ -11,13 +11,13 @@
     [type="email"],
     textarea{
         padding: var(--space-0-x) var(--space-0-xx);
-        background-color: var(--color-input-bg);
+        background-color: setBackgroundColor(form-input);
+        color: setTextColor(form-input);
         border-radius: .25rem;
         width: 100%;
 
         &:focus{
-            // border-color: var(--color-primary);
-            // outline-color: var(--color-primary);
+            box-shadow: 0 0 3px $dark-jungle-green;
         }
     }
 
