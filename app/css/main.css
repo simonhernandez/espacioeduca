@@ -685,6 +685,87 @@ body {
 
 /*
     ------------------------
+    ------- Footer ---------
+    ------------------------
+*/
+.footer {
+  background-color: #11272B;
+  color: #FFF;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: var(--space-3-xxx) 0;
+}
+
+.footer .brand {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.footer .brand__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .brand__logo img {
+  max-width: 2.2rem;
+  margin-right: var(--space-0-xx);
+}
+
+.footer .nav__list:first-of-type {
+  margin-bottom: var(--space-1);
+}
+
+.footer .nav__list > *:not(:last-child) {
+  margin-bottom: var(--space-1);
+}
+
+.footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: var(--space-3-xx) 0;
+}
+
+.footer .social > *:not(:last-child) {
+  margin-right: var(--space-1);
+}
+
+/*
+    ------------------------
     --------- Hero ---------
     ------------------------
 */

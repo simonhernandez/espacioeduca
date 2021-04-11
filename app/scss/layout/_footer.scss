@@ -1,0 +1,45 @@
+/*
+    ------------------------
+    ------- Footer ---------
+    ------------------------
+*/
+
+.footer{
+    background-color: setBackgroundColor(footer);
+    color: setTextColor(footer);
+    text-align: center;
+    @include flex(c, c, column);
+    padding: var(--space-3-xxx) 0;
+
+    .brand{
+        order: 3;
+        &__logo{
+            @include flex(c, c, row);
+
+            img{
+                max-width: 2.2rem;
+                margin-right: var(--space-0-xx);
+            }
+        }
+    }
+
+    .nav{
+        &__list{
+            &:first-of-type{
+                margin-bottom: var(--space-1);
+            }
+            > *:not(:last-child){
+                margin-bottom: var(--space-1);
+            }
+        }
+    }
+
+    .social{
+        @include flex(c, c, row);
+        margin: var(--space-3-xx) 0;
+
+        > *:not(:last-child){
+            margin-right: var(--space-1);
+        }
+    }
+}
