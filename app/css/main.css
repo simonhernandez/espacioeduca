@@ -287,6 +287,19 @@ body {
         }
     }
 } */
+.footer .nav__item {
+  font-weight: var(--fw-med);
+}
+
+.footer .brand__logo span {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+}
+
+.footer .brand .copyright {
+  font-weight: var(--fw-med);
+}
+
 /*
     ------------------------
     -------- Icons ---------

@@ -125,3 +125,24 @@ body{
         }
     }
 } */
+
+.footer{
+
+    .nav{
+        &__item{
+            font-weight: var(--fw-med);
+        }
+    }
+    .brand{
+        &__logo{
+            span{
+                font-size: var(--fs-md);
+                font-weight: var(--fw-bold);
+            }
+        }
+
+        .copyright{
+            font-weight: var(--fw-med);
+        }
+    }
+}
