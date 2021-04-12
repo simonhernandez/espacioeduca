@@ -994,11 +994,34 @@ body {
   background: url(../../../assets/images/shape-dots-blue.svg) center top/cover no-repeat;
 }
 
+.contact::after {
+  width: 100%;
+  height: 6rem;
+  bottom: 0;
+  left: 0;
+  background-color: #11272B;
+  z-index: var(--z-back);
+}
+
 .contact__card {
+  position: relative;
   background-color: #FF8B00;
   color: #FFF;
   border-radius: 15px;
   padding: var(--space-2) var(--space-1-xx);
+}
+
+.contact__card::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 720px;
+  background: url(../../../assets/images/shape-cirlce.svg) center top/cover no-repeat;
 }
 
 .contact__text-container {
