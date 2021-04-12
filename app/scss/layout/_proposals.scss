@@ -1,0 +1,40 @@
+/*
+    ------------------------
+    ----- Proposals --------
+    ------------------------
+*/
+
+.proposals{
+    background-color: setBackgroundColor(section-proposal);
+    color: setTextColor(section-proposal);
+    padding: var(--space-4-x) 0;
+
+    &__text-container{
+        text-align: center;
+        margin-bottom: var(--space-4-xxx);
+    }
+
+    &__list{
+        > *:not(:last-child){
+            margin-bottom: var(--space-3-xx);
+        }
+    }
+
+    &__item{
+        position: relative;
+
+        &:not(:last-of-type){
+            &::before{
+                content: '';
+                display: block;
+                width: 10px;
+                height: calc(100% + var(--space-3-xx));
+                position: absolute;
+                top: 0;
+                left: 24px;
+                z-index: var(--z-back);
+                background-color: $blue;
+            }
+        }
+    }
+}
