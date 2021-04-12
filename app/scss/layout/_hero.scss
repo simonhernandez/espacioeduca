@@ -33,6 +33,7 @@
     }
 
     &__text-container{
+        max-width: 528px;
         text-align: center;
         margin-bottom: var(--space-1);
         position: relative;
@@ -62,7 +63,7 @@
         }
 
         &__image-container{
-            max-width: 375px;
+            max-width: 420px;
             margin-left: auto;
         }
     }
