@@ -1,0 +1,27 @@
+/*
+    ------------------------
+    ------ Proposal --------
+    ------------------------
+*/
+
+.proposal{
+    @include flex(fs, fs, row);
+
+    &__number{
+        display: inline-block;
+        background-color: setBackgroundColor(icon-blue);
+        color: setTextColor(icon-blue);
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        margin-right: var(--space-1-x);
+        @include flex(c, c, row);
+        flex-shrink: 0;
+    }
+
+    &__text-container{
+        .heading{
+            margin-bottom: var(--space-0-xx);
+        }
+    }
+}

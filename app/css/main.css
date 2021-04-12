@@ -470,6 +470,56 @@ body {
 
 /*
     ------------------------
+    ------ Proposal --------
+    ------------------------
+*/
+.proposal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.proposal__number {
+  display: inline-block;
+  background-color: #D5E8FF;
+  color: #5BB0E0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-right: var(--space-1-x);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.proposal__text-container .heading {
+  margin-bottom: var(--space-0-xx);
+}
+
+/*
+    ------------------------
     -------- Quote ---------
     ------------------------
 */
