@@ -76,7 +76,9 @@ body{
         line-height: var(--lh-h3);
     }
 
-    &--bottom-line{
+    &--bottom-line-orange,
+    &--bottom-line-blue,
+    &--bottom-line-white{
         position: relative;
         margin-bottom: var(--space-2) !important;
 
@@ -91,6 +93,16 @@ body{
             height: 2px;
             background-color: $orange;
             margin: 0 auto;
+        }
+    }
+    &--bottom-line-blue{
+        &::before{
+            background-color: $blue;
+        }
+    }
+    &--bottom-line-white{
+        &::before{
+            background-color: $white;
         }
     }
 }

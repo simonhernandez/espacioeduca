@@ -239,12 +239,12 @@ body {
   line-height: var(--lh-h3);
 }
 
-.heading--bottom-line {
+.heading--bottom-line-orange, .heading--bottom-line-blue, .heading--bottom-line-white {
   position: relative;
   margin-bottom: var(--space-2) !important;
 }
 
-.heading--bottom-line::before {
+.heading--bottom-line-orange::before, .heading--bottom-line-blue::before, .heading--bottom-line-white::before {
   content: '';
   display: block;
   position: absolute;
@@ -255,6 +255,14 @@ body {
   height: 2px;
   background-color: #FF8B00;
   margin: 0 auto;
+}
+
+.heading--bottom-line-blue::before {
+  background-color: #5BB0E0;
+}
+
+.heading--bottom-line-white::before {
+  background-color: #FFF;
 }
 
 .paragraph {
