@@ -694,7 +694,7 @@ body {
   font-weight: var(--fw-bold);
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 1023px) {
   .header .nav__list {
     position: fixed;
     top: var(--header-height);
