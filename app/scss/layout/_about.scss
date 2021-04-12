@@ -48,6 +48,11 @@
         }
     }
 
+    &__item{
+        max-width: 331px;
+        margin: 0 auto;
+    }
+
     // Media Queries
 
     @include breakpoint-up(medium){
@@ -56,7 +61,7 @@
             max-width: 497px;
             margin: initial;
             margin-left: auto;
-            margin-bottom: var(--space-4);
+            margin-bottom: var(--space-3-x);
         }
 
         &__text-container{
@@ -65,8 +70,10 @@
         }
 
         &__list{
-            @include flex(sb, c, row);
+            @include flex(c, c, row);
             flex-wrap: wrap;
+            margin: -12px 0 0 -12px;
+            width: calc(100% + 12px);
 
             > *:not(:last-child){
                 margin-bottom: initial;
@@ -75,7 +82,8 @@
 
         &__item{
             flex: 1 1 auto;
-            margin: var(--space-1-xx) 0;
+            margin: 12px 0 0 12px;
+
         }
     }
 }
