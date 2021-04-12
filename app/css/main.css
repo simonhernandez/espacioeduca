@@ -1031,6 +1031,7 @@ body {
 
 .contact__card {
   position: relative;
+  z-index: var(--z-normal);
   background-color: #FF8B00;
   color: #FFF;
   border-radius: 15px;
@@ -1041,6 +1042,7 @@ body {
   content: '';
   display: block;
   position: absolute;
+  z-index: var(--z-back);
   top: 50px;
   left: 0;
   right: 0;

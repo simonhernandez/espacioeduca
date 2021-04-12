@@ -38,6 +38,7 @@
     
     &__card{
         position: relative;
+        z-index: var(--z-normal);
         background-color: setBackgroundColor(contact-card);
         color: setTextColor(contact-card);
         border-radius: 15px;
@@ -47,6 +48,7 @@
             content: '';
             display: block;
             position: absolute;
+            z-index: var(--z-back);
             top: 50px;
             left: 0;
             right: 0;
