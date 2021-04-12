@@ -1,9 +1,9 @@
 <svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.25" filter="url(#filter0_d)">
-<circle cx="360" cy="356" r="355.5" transform="rotate(-90 360 356)" stroke="#747B95"/>
+<circle cx="360" cy="356" r="355.5" transform="rotate(-90 360 356)" stroke="#fff"/>
 </g>
 <g opacity="0.25" filter="url(#filter1_d)">
-<circle cx="360" cy="356" r="282.5" transform="rotate(-90 360 356)" stroke="#747B95"/>
+<circle cx="360" cy="356" r="282.5" transform="rotate(-90 360 356)" stroke="#fff"/>
 </g>
 <defs>
 <filter id="filter0_d" x="0" y="0" width="720" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
