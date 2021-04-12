@@ -116,49 +116,11 @@ body{
     font-weight: var(--fw-med);
 }
 
-/* .btn, .nav{
-    font-family: var(--ff-secondary);
-    font-weight: var(--fw-bold);
-}
-
-.btn{
-    font-size: var(--fs-base);
-    line-height: var(--lh-btn);
-}
-
-.nav{
-    &__item,
-    &__subitem{
-        font-family: var(--ff-primary);
-        font-size: var(--fs-md);
-        font-weight: var(--fw-semi-bold);
-        line-height: var(--lh-md);
-    }
-
-    &__subitem{
-        color: rgba(31, 62, 90, .75);
-        font-size: var(--fs-base);
-    }
-
-    @include breakpoint-up(large){
-        &__subitem{
-            font-family: var(--ff-secondary);
-            font-weight: var(--fw-reg);
-            &:hover{
-                font-weight: var(--fw-bold);
-            }
-        }
+.proposal{
+    &__number{
+        font-size: 1.6rem;
     }
 }
-
-.footer{
-    &__item{
-        &:first-of-type{
-            color: var(--color-text-white);
-            font-weight: var(--fw-med);
-        }
-    }
-} */
 
 .footer{
 
