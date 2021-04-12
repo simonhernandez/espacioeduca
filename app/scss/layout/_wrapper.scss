@@ -8,7 +8,7 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
-    max-width: 327px;
+    padding: 0 var(--space-1-xx);
 
     display: inherit;
     grid-template-columns: inherit;
@@ -23,7 +23,7 @@
 
     /* Tablet */
     @include breakpoint-up(medium){
-        max-width: 573px;
+        padding: 0 var(--space-2-xx);
     }
 
     /* Desktop */

@@ -599,7 +599,7 @@ body {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  max-width: 327px;
+  padding: 0 var(--space-1-xx);
   display: inherit;
   -ms-grid-columns: inherit;
       grid-template-columns: inherit;
@@ -626,7 +626,7 @@ body {
 
 @media screen and (min-width: 640px) {
   .wrapper {
-    max-width: 573px;
+    padding: 0 var(--space-2-xx);
   }
 }
 
