@@ -580,6 +580,7 @@ body {
   -webkit-box-shadow: var(--bxs-card);
           box-shadow: var(--bxs-card);
   border-radius: 12px;
+  max-width: 356px;
 }
 
 .card__icon {
