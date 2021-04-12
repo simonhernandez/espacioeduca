@@ -23,7 +23,7 @@
         "../scss/layout/_hero.scss",
         "../scss/layout/_sponsors.scss",
         "../scss/layout/_about.scss",
-        "../scss/layout/_proposal.scss",
+        "../scss/layout/_proposals.scss",
         "../scss/layout/_team.scss",
         "../scss/layout/_contact.scss",
         "../scss/pages/_home.scss"
