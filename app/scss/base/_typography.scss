@@ -75,6 +75,24 @@ body{
         font-size: var(--fs-h3);
         line-height: var(--lh-h3);
     }
+
+    &--bottom-line{
+        position: relative;
+        margin-bottom: var(--space-2) !important;
+
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: calc(100% + var(--space-1));
+            left: 0;
+            right: 0;
+            width: 95px;
+            height: 2px;
+            background-color: $orange;
+            margin: 0 auto;
+        }
+    }
 }
 
 .paragraph{

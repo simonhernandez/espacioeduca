@@ -239,6 +239,24 @@ body {
   line-height: var(--lh-h3);
 }
 
+.heading--bottom-line {
+  position: relative;
+  margin-bottom: var(--space-2) !important;
+}
+
+.heading--bottom-line::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc(100% + var(--space-1));
+  left: 0;
+  right: 0;
+  width: 95px;
+  height: 2px;
+  background-color: #FF8B00;
+  margin: 0 auto;
+}
+
 .paragraph {
   font-size: var(--fs-base);
   line-height: var(--lh-base);
