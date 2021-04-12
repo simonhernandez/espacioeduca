@@ -15,4 +15,22 @@
             max-width: 81px;
         }
     }
+
+    @include breakpoint-up(medium){
+        
+        &__list{
+            @include flex(sb, c, row);
+            max-width: initial;
+
+            > *:not(:last-child){
+                margin-bottom: initial;
+            }
+        }
+
+        &__item{
+            &--ucab{
+                max-width: 165px;
+            }
+        }
+    }
 }
