@@ -65,12 +65,17 @@
         }
 
         &__list{
-            @include flex(c, c, row);
+            @include flex(sb, c, row);
             flex-wrap: wrap;
 
             > *:not(:last-child){
                 margin-bottom: initial;
             }
+        }
+
+        &__item{
+            flex: 1 1 auto;
+            margin: var(--space-1-xx) 0;
         }
     }
 }
