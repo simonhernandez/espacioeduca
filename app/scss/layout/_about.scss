@@ -47,4 +47,26 @@
             margin-bottom: var(--space-2);
         }
     }
+
+    // Media Queries
+
+    @include breakpoint-up(medium){
+        
+        &__image-container{
+            max-width: 497px;
+            margin: initial;
+            margin-left: auto;
+            margin-bottom: var(--space-4);
+        }
+
+        &__text-container{
+            text-align: initial;
+            max-width: 434px;
+        }
+
+        &__list{
+            @include flex(sb, c, row);
+            flex-wrap: wrap;
+        }
+    }
 }

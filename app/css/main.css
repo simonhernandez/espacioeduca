@@ -968,6 +968,36 @@ body {
   margin-bottom: var(--space-2);
 }
 
+@media screen and (min-width: 640px) {
+  .about__image-container {
+    max-width: 497px;
+    margin: initial;
+    margin-left: auto;
+    margin-bottom: var(--space-4);
+  }
+  .about__text-container {
+    text-align: initial;
+    max-width: 434px;
+  }
+  .about__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 /*
     ------------------------
     ----- Proposals --------
