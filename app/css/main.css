@@ -1027,6 +1027,7 @@ body {
 
 .proposals__text-container {
   text-align: center;
+  margin: 0 auto;
   margin-bottom: var(--space-4-xxx);
 }
 
@@ -1036,18 +1037,90 @@ body {
 
 .proposals__item {
   position: relative;
+  max-width: 350px;
 }
 
-.proposals__item:not(:last-of-type)::before {
-  content: '';
-  display: block;
-  width: 10px;
-  height: calc(100% + var(--space-3-xx));
-  position: absolute;
-  top: 0;
-  left: 24px;
-  z-index: var(--z-back);
-  background-color: #5BB0E0;
+@media screen and (max-width: 639px) {
+  .proposals__item:not(:last-of-type)::before {
+    content: '';
+    display: block;
+    z-index: var(--z-back);
+    background-color: #5BB0E0;
+    position: absolute;
+    width: 10px;
+    height: calc(100% + var(--space-3-xx));
+    top: 0;
+    left: 24px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .proposals__text-container {
+    max-width: 513px;
+  }
+  .proposals__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -56px 0 0 0;
+    width: calc(100% + 12px);
+  }
+  .proposals__list > *:not(:last-child) {
+    margin-bottom: initial;
+  }
+  .proposals__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    margin: var(--space-3-xx) 0 0 0;
+    position: relative;
+    z-index: 1;
+  }
+  .proposals__item:first-of-type::before, .proposals__item:first-of-type::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #5BB0E0;
+    -webkit-box-shadow: var(--bxs-line);
+            box-shadow: var(--bxs-line);
+    z-index: -1;
+    height: 10px;
+  }
+  .proposals__item:first-of-type::before {
+    top: 24px;
+    left: -100%;
+    width: 100%;
+  }
+  .proposals__item:first-of-type::after {
+    top: 24px;
+    left: 0;
+    width: 102%;
+  }
+  .proposals__item:last-of-type::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #5BB0E0;
+    -webkit-box-shadow: var(--bxs-line);
+            box-shadow: var(--bxs-line);
+    z-index: -1;
+    height: 10px;
+    top: 24px;
+    left: -100%;
+    width: 100%;
+  }
 }
 
 /*
