@@ -82,8 +82,8 @@
 
                 &::before{
                     top: 24px;
-                    left: -100%;
-                    width: 100%;
+                    left: -1000%;
+                    width: 1000%;
                 }
 
                 &::after{
@@ -103,8 +103,8 @@
                     z-index: -1;
                     height: 10px;
                     top: 24px;
-                    left: -100%;
-                    width: 100%;
+                    left: -1000%;
+                    width: 1000%;
                 }
             }
         }

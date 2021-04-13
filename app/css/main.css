@@ -1100,8 +1100,8 @@ body {
   }
   .proposals__item:first-of-type::before {
     top: 24px;
-    left: -100%;
-    width: 100%;
+    left: -1000%;
+    width: 1000%;
   }
   .proposals__item:first-of-type::after {
     top: 24px;
@@ -1118,8 +1118,8 @@ body {
     z-index: -1;
     height: 10px;
     top: 24px;
-    left: -100%;
-    width: 100%;
+    left: -1000%;
+    width: 1000%;
   }
 }
 
