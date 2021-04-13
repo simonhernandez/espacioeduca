@@ -24,4 +24,15 @@
             margin-bottom: var(--space-0-xx);
         }
     }
+
+    // Media Queries
+
+    @include breakpoint-up(medium){
+        @include flex(fs, fs, column);
+        max-width: 317px;
+
+        &__number{
+            margin-bottom: var(--space-2-x);
+        }
+    }
 }
