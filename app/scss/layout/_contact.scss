@@ -95,4 +95,47 @@
         margin: 0 auto;
         @include flex(c, c, row);
     }
+
+    // Media Queries
+
+    @include breakpoint-up(medium){
+
+        &__card{
+            padding: var(--space-3-xxx) var(--space-6);
+        }
+
+        &__text-container{
+            text-align: initial;
+            max-width: 471px;
+            margin-bottom: var(--space-1-xx);
+            .heading--2{
+                margin-bottom: var(--space-1);
+            }
+            .heading--3{
+                margin-bottom: var(--space-2);
+            }
+        }
+
+        &__address-container{
+            @include flex(fs, c, row);
+            text-align: left;
+    
+            >*:not(:last-child){
+                margin-bottom: initial;
+                margin-right: var(--space-2-xx);
+            }
+        }
+
+        &__phone,
+        &__email{
+            text-align: initial;
+            >:not(:last-child){
+                margin-bottom: init;
+            }
+        }
+
+        &__icon{
+            margin: initial;
+        }
+    }
 }

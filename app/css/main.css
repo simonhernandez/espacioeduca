@@ -1378,6 +1378,52 @@ body {
           flex-direction: row;
 }
 
+@media screen and (min-width: 640px) {
+  .contact__card {
+    padding: var(--space-3-xxx) var(--space-6);
+  }
+  .contact__text-container {
+    text-align: initial;
+    max-width: 471px;
+    margin-bottom: var(--space-1-xx);
+  }
+  .contact__text-container .heading--2 {
+    margin-bottom: var(--space-1);
+  }
+  .contact__text-container .heading--3 {
+    margin-bottom: var(--space-2);
+  }
+  .contact__address-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+  }
+  .contact__address-container > *:not(:last-child) {
+    margin-bottom: initial;
+    margin-right: var(--space-2-xx);
+  }
+  .contact__phone, .contact__email {
+    text-align: initial;
+  }
+  .contact__phone > :not(:last-child), .contact__email > :not(:last-child) {
+    margin-bottom: init;
+  }
+  .contact__icon {
+    margin: initial;
+  }
+}
+
 /*
     ------------------------
     --------- Home ---------
