@@ -878,6 +878,11 @@ body {
         grid-template-areas: "nav social" "brand brand";
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    row-gap: var(--space-2);
+  }
+  .footer .nav,
+  .footer .social {
+    padding: 0 var(--space-2-xx);
   }
   .footer .brand {
     -ms-grid-row: 2;
@@ -889,11 +894,25 @@ body {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: social;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .footer .nav {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: nav;
+    text-align: left;
   }
 }
 
