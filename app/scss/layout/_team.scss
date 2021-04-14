@@ -16,12 +16,13 @@
         content: '';
         position: absolute;
         display: block;
+        z-index: var(--z-back);
+        z-index: -100;
     }
 
     &::before{
         top: 0;
         left: 0;
-        z-index: var(--z-back);
         width: 145px;
         height: 65px;
         @include background-image('../../../assets/images/shape-dots-blue.svg', center top, cover)
@@ -45,6 +46,59 @@
     &__quote-list{
         > *:not(:last-child){
             margin-bottom: var(--space-1-xx);
+        }
+    }
+
+    &__quote-item{
+        max-width: 333px;
+    }
+
+    // Media Queries
+
+    @include breakpoint-up(medium){
+        position: relative;
+
+        &::after{
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            right: -40%;
+            width: 712px;
+            height: 712px;
+            @include background-image('../../../assets/images/shape-circle-gray.svg', center top, cover);
+        }
+
+        &__image-container{
+            max-width: 488px;
+            margin: initial;
+            margin-left: auto;
+            margin-bottom: var(--space-1-xxx);
+        }
+
+        &__text-container{
+            text-align: initial;
+            max-width: 436px;
+            margin-bottom: var(--space-2-xxx);
+    
+            > *:not(:last-child){
+                margin-bottom: var(--space-1-x);
+            }
+        }
+
+        &__quote-list{
+            @include flex(c, c, row);
+            flex-wrap: wrap;
+            margin: -14px 0 0 -14px;
+            width: calc(100% + 12px);
+
+            > *:not(:last-child){
+                margin-bottom: initial;
+            }
+        }
+
+        &__quote-item{
+            flex: 1 1 auto;
+            margin: 14px 0 0 14px;
         }
     }
 }
