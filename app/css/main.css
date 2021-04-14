@@ -653,6 +653,8 @@ body {
   -ms-grid-rows: inherit;
       grid-template-rows: inherit;
       grid-template-areas: inherit;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
   gap: inherit;
   -webkit-column-gap: inherit;
           column-gap: inherit;
