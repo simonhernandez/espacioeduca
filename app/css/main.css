@@ -869,6 +869,32 @@ body {
   margin-right: var(--space-1);
 }
 
+@media screen and (min-width: 640px) {
+  .footer {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "nav social" "brand brand";
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .footer .brand {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: brand;
+  }
+  .footer .social {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: social;
+  }
+  .footer .nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: nav;
+  }
+}
+
 /*
     ------------------------
     --------- Hero ---------

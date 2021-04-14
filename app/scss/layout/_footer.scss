@@ -42,4 +42,27 @@
             margin-right: var(--space-1);
         }
     }
+
+    // Media Queries
+
+    @include breakpoint-up(medium){
+
+        display: grid;
+        grid-template-areas: "nav social"
+                             "brand brand";
+        grid-template-columns: repeat(2, 1fr);
+        
+
+        .brand{
+            grid-area: brand;
+        }
+
+        .social{
+            grid-area: social;
+        }
+
+        .nav{
+            grid-area: nav;
+        }
+    }
 }
