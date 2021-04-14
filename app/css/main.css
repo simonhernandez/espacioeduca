@@ -1077,6 +1077,19 @@ body {
 }
 
 @media screen and (min-width: 640px) {
+  .proposals {
+    position: relative;
+  }
+  .proposals::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    width: 533px;
+    height: 533px;
+    background: url(../../../assets/images/shape-circle-gray.svg) center top/cover no-repeat;
+  }
   .proposals__text-container {
     max-width: 513px;
   }

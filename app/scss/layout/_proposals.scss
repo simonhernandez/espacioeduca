@@ -45,6 +45,18 @@
     // Media Queries
 
     @include breakpoint-up(medium){
+        position: relative;
+
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -150px;
+            width: 533px;
+            height: 533px;
+            @include background-image('../../../assets/images/shape-circle-gray.svg', center top, cover);
+        }
 
         &__text-container{
             max-width: 513px;
