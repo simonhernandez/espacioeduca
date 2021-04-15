@@ -30,10 +30,9 @@
 
     /* Desktop */
     @include breakpoint-up(large){
-        max-width: 940px;
+        max-width: 1110px;
     }
 
     @include breakpoint-up(xlarge){
-        max-width: 1110px;
     }
 }
