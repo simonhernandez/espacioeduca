@@ -1255,6 +1255,7 @@ body {
 
 .team__quote-item {
   max-width: 333px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 640px) {
