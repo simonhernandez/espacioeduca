@@ -6,7 +6,6 @@
 
 .team{
     position: relative;
-    z-index: var(--z-back);
     background-color: setBackgroundColor(section-about);
     color: setTextColor(section-about);
     padding: var(--space-2-xx) 0;
@@ -16,8 +15,6 @@
         content: '';
         position: absolute;
         display: block;
-        z-index: var(--z-back);
-        z-index: -100;
     }
 
     &::before{

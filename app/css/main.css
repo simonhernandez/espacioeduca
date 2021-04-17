@@ -697,6 +697,8 @@ body {
     ------------------------
 */
 .header {
+  position: relative;
+  z-index: var(--z-normal);
   background-color: #FFF;
   color: #333950;
 }
@@ -1059,7 +1061,6 @@ body {
 */
 .about {
   position: relative;
-  z-index: var(--z-back);
   background-color: #FFF;
   color: #333950;
   padding: var(--space-2-xx) 0;
@@ -1074,7 +1075,6 @@ body {
 .about::before {
   top: 0;
   left: 0;
-  z-index: var(--z-back);
   width: 145px;
   height: 65px;
   background: url(../../../assets/images/shape-dots-blue.svg) center top/cover no-repeat;
@@ -1307,7 +1307,6 @@ body {
 */
 .team {
   position: relative;
-  z-index: var(--z-back);
   background-color: #FFF;
   color: #333950;
   padding: var(--space-2-xx) 0;
@@ -1317,8 +1316,6 @@ body {
   content: '';
   position: absolute;
   display: block;
-  z-index: var(--z-back);
-  z-index: -100;
 }
 
 .team::before {

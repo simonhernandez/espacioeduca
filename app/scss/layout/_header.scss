@@ -5,13 +5,8 @@
 */
 
 .header{
-    // height: var(--header-height);
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // right: 0;
-    // z-index: var(--z-fixed);
-    // box-shadow: var(--bxs-header);
+    position: relative;
+    z-index: var(--z-normal);
     background-color: setBackgroundColor(header);
     color: setTextColor(header);
 

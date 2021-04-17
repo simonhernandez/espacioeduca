@@ -6,7 +6,6 @@
 
 .about{
     position: relative;
-    z-index: var(--z-back);
     background-color: setBackgroundColor(section-about);
     color: setTextColor(section-about);
     padding: var(--space-2-xx) 0;
@@ -21,7 +20,6 @@
     &::before{
         top: 0;
         left: 0;
-        z-index: var(--z-back);
         width: 145px;
         height: 65px;
         @include background-image('../../../assets/images/shape-dots-blue.svg', center top, cover)
