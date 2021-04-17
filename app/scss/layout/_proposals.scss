@@ -121,4 +121,29 @@
             }
         }
     }
+
+    @include breakpoint-up(large){
+        &__item{
+            &:nth-of-type(2){
+                position: relative;
+                &::before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    background-color: $blue;
+                    box-shadow: var(--bxs-line);
+                    z-index: -1;
+                    height: 10px;
+                    top: 24px;
+                    left: 0;
+                    width: 100%;
+                }
+            }
+            &:last-of-type{
+                &::before{
+                    display: none;
+                }
+            }
+        }
+    }
 }

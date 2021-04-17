@@ -1309,6 +1309,28 @@ body {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .proposals__item:nth-of-type(2) {
+    position: relative;
+  }
+  .proposals__item:nth-of-type(2)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #5BB0E0;
+    -webkit-box-shadow: var(--bxs-line);
+            box-shadow: var(--bxs-line);
+    z-index: -1;
+    height: 10px;
+    top: 24px;
+    left: 0;
+    width: 100%;
+  }
+  .proposals__item:last-of-type::before {
+    display: none;
+  }
+}
+
 /*
     ------------------------
     --------- Team ---------
@@ -1469,7 +1491,6 @@ body {
 */
 .contact {
   position: relative;
-  z-index: var(--z-back);
   padding-top: var(--space-5-xxx);
   background-color: #FAFAFA;
   color: #333950;
@@ -1484,7 +1505,6 @@ body {
 .contact::before {
   top: 0;
   left: 0;
-  z-index: var(--z-back);
   width: 145px;
   height: 65px;
   background: url(../../../assets/images/shape-dots-blue.svg) center top/cover no-repeat;
@@ -1496,7 +1516,6 @@ body {
   bottom: 0;
   left: 0;
   background-color: #11272B;
-  z-index: var(--z-back);
 }
 
 .contact__card {
