@@ -1061,6 +1061,7 @@ body {
 */
 .about {
   position: relative;
+  overflow: hidden;
   background-color: #FFF;
   color: #333950;
   padding: var(--space-2-xx) 0;
@@ -1078,6 +1079,14 @@ body {
   width: 145px;
   height: 65px;
   background: url(../../../assets/images/shape-dots-blue.svg) center top/cover no-repeat;
+}
+
+.about::after {
+  bottom: -300px;
+  right: -300px;
+  width: 712px;
+  height: 712px;
+  background: url(../../../assets/images/shape-circle-gray.svg) center top/cover no-repeat;
 }
 
 .about__image-container {
@@ -1307,6 +1316,7 @@ body {
 */
 .team {
   position: relative;
+  overflow: hidden;
   background-color: #FFF;
   color: #333950;
   padding: var(--space-2-xx) 0;
@@ -1327,6 +1337,8 @@ body {
 }
 
 .team__image-container {
+  position: relative;
+  z-index: var(--z-normal);
   max-width: 300px;
   margin: 0 auto;
   margin-bottom: var(--space-2-xxx);
@@ -1418,6 +1430,12 @@ body {
     -webkit-column-gap: var(--space-4);
             column-gap: var(--space-4);
     row-gap: var(--space-6-xx);
+  }
+  .team::after {
+    top: -300px;
+    right: -300px;
+    bottom: initial;
+    margin: initial;
   }
   .team__image-container {
     max-width: 563px;

@@ -6,6 +6,7 @@
 
 .about{
     position: relative;
+    overflow: hidden;
     background-color: setBackgroundColor(section-about);
     color: setTextColor(section-about);
     padding: var(--space-2-xx) 0;
@@ -23,6 +24,14 @@
         width: 145px;
         height: 65px;
         @include background-image('../../../assets/images/shape-dots-blue.svg', center top, cover)
+    }
+
+    &::after{
+        bottom: -300px;
+        right: -300px;
+        width: 712px;
+        height: 712px;
+        @include background-image('../../../assets/images/shape-circle-gray.svg', center top, cover)
     }
 
     &__image-container{

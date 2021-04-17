@@ -6,6 +6,7 @@
 
 .team{
     position: relative;
+    overflow: hidden;
     background-color: setBackgroundColor(section-about);
     color: setTextColor(section-about);
     padding: var(--space-2-xx) 0;
@@ -26,6 +27,8 @@
     }
 
     &__image-container{
+        position: relative;
+        z-index: var(--z-normal);
         max-width: 300px;
         margin: 0 auto;
         margin-bottom: var(--space-2-xxx);
@@ -108,6 +111,13 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: var(--space-4);
         row-gap: var(--space-6-xx);
+
+        &::after{
+            top: -300px;
+            right: -300px;
+            bottom: initial;
+            margin: initial;
+        }
 
         &__image-container{
             max-width: 563px;
