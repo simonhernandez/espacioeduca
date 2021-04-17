@@ -685,7 +685,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1460px) {
   .wrapper {
     max-width: 1400px;
   }
