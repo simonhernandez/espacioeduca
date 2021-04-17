@@ -73,4 +73,22 @@
             text-align: left;
         }
     }
+
+    @include breakpoint-up(large){
+        grid-template-areas: "brand nav social";
+        grid-template-columns: repeat(3, 1fr);
+        text-align: initial;
+
+        .brand{
+            &__logo{
+                @include flex(fs, c, row);
+            }
+        }
+
+        .nav{
+            &__list{
+                @include flex(st, fs, column);
+            }
+        }
+    }
 }

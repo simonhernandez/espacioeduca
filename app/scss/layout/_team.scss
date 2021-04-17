@@ -102,4 +102,34 @@
             margin: 14px 0 0 14px;
         }
     }
+
+    @include breakpoint-up(large){
+        padding: var(--space-3-x) 0;
+        display: grid;
+        grid-template-areas: "text img"
+                             "list list";
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: var(--space-4);
+        row-gap: var(--space-6-xx);
+
+        &__image-container{
+            max-width: 563px;
+            grid-area: img;
+            margin: initial;
+            margin-left: auto;
+        }
+
+        &__text-container{
+            grid-area: text;
+            margin: auto 0;
+        }
+
+        &__quote-list{
+            grid-area: list;
+        }
+
+        &__quote-item{
+            max-width: 400px;
+        }
+    }
 }

@@ -138,4 +138,39 @@
             margin: initial;
         }
     }
+
+    @include breakpoint-up(large){
+        
+        &__card{
+            overflow: hidden;
+            display: grid;
+            grid-template-areas: "text form"
+                                 "address form";
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: var(--space-2);
+
+            &::before{
+                width: 712px;
+                height: 712px;
+                right: initial;
+                left: -100px;
+                top: 0;
+                bottom: 0;
+                margin: auto 0;
+            }
+        }
+
+        &__text-container{
+            grid-area: text;
+        }
+
+        &__address-container{
+            grid-area: address;
+        }
+
+        form{
+            grid-area: form;
+            align-self: center;
+        }
+    }
 }

@@ -67,4 +67,18 @@
             margin-left: auto;
         }
     }
+
+    @include breakpoint-up(large){
+        @include flex(sb, c, row);
+        padding: var(--space-3-x) 0;
+
+        &::before{
+            width: 657px;
+            height: 747px;
+        }
+
+        &__image-container{
+            max-width: 563px;
+        }
+    }
 }
