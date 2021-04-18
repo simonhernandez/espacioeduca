@@ -15,40 +15,5 @@
         section.hero{
             margin-top: var(--space-4-xx);
         }
-
-        /* section.sponsors{
-            margin-top: 273px;
-        }
-
-        section.about{
-            margin-top: var(--space-5);
-            margin-bottom: var(--space-6-x);
-        }
-
-        section.proposals{
-            margin-top: var(--space-5);
-            margin-bottom: var(--space-6-x);
-        }
-
-        section.team{
-            margin-top: var(--space-5);
-            margin-bottom: var(--space-6-x);
-        } */
-    }
-
-    /* Large Screens */
-    @include breakpoint-up(large){
-        section.about{
-            margin-top: var(--space-9-x);
-        }
-
-        section.overview{
-            margin-top: 273px;
-        }
-
-        section.features{
-            margin-top: 301px;
-            margin-bottom: 301px;
-        }
     }
 }
