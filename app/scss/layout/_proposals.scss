@@ -123,6 +123,13 @@
     }
 
     @include breakpoint-up(large){
+        padding: var(--space-5-xx) 0;
+
+        &::before{
+            bottom: 0;
+            margin: auto 0;
+        }
+
         &__item{
             &:nth-of-type(2){
                 position: relative;

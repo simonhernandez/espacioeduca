@@ -1156,7 +1156,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .about {
-    padding: var(--space-3-x) 0;
+    padding: var(--space-5-xx) 0;
     display: -ms-grid;
     display: grid;
         grid-template-areas: "img text" "list list";
@@ -1310,6 +1310,13 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  .proposals {
+    padding: var(--space-5-xx) 0;
+  }
+  .proposals::before {
+    bottom: 0;
+    margin: auto 0;
+  }
   .proposals__item:nth-of-type(2) {
     position: relative;
   }
@@ -1443,7 +1450,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .team {
-    padding: var(--space-3-x) 0;
+    padding: var(--space-5-xx) 0;
     display: -ms-grid;
     display: grid;
         grid-template-areas: "text img" "list list";
