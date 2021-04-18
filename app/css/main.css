@@ -624,11 +624,17 @@ body {
   -webkit-box-shadow: var(--bxs-card);
           box-shadow: var(--bxs-card);
   border-radius: 12px;
+  -webkit-transition: .125s ease-in all;
+  transition: .125s ease-in all;
 }
 
 .card:hover {
   background-color: #FF8B00;
   color: #FFF;
+}
+
+.card:hover .heading--bottom-line-orange::before {
+  background-color: #FFF;
 }
 
 .card__icon {

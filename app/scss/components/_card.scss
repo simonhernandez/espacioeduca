@@ -8,10 +8,19 @@
     padding: var(--space-2);
     box-shadow: var(--bxs-card);
     border-radius: 12px;
+    transition: .125s ease-in all;
 
     &:hover{
         background-color: setBackgroundColor(card-hover);
         color: setTextColor(card-hover);
+
+        .heading{
+            &--bottom-line-orange{
+                &::before{
+                    background-color: $white;
+                }
+            }
+        }
     }
 
     &__icon{
