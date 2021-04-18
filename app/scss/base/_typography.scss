@@ -116,6 +116,19 @@ body{
     font-weight: var(--fw-med);
 }
 
+.header,
+.footer{
+    .nav{
+        &__item{
+            font-weight: var(--fw-med);
+
+            &:hover a{
+                color: $orange;
+            }
+        }
+    }
+}
+
 .proposal{
     &__number{
         font-size: 1.6rem;
@@ -123,12 +136,6 @@ body{
 }
 
 .footer{
-
-    .nav{
-        &__item{
-            font-weight: var(--fw-med);
-        }
-    }
     .brand{
         &__logo{
             span{
@@ -139,6 +146,16 @@ body{
 
         .copyright{
             font-weight: var(--fw-med);
+        }
+    }
+
+    .social{
+        &__item{
+            font-weight: var(--fw-med);
+
+            &:hover a{
+                color: $orange;
+            }
         }
     }
 }

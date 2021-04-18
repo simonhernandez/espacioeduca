@@ -274,12 +274,18 @@ body {
   font-weight: var(--fw-med);
 }
 
-.proposal__number {
-  font-size: 1.6rem;
-}
-
+.header .nav__item,
 .footer .nav__item {
   font-weight: var(--fw-med);
+}
+
+.header .nav__item:hover a,
+.footer .nav__item:hover a {
+  color: #FF8B00;
+}
+
+.proposal__number {
+  font-size: 1.6rem;
 }
 
 .footer .brand__logo span {
@@ -289,6 +295,14 @@ body {
 
 .footer .brand .copyright {
   font-weight: var(--fw-med);
+}
+
+.footer .social__item {
+  font-weight: var(--fw-med);
+}
+
+.footer .social__item:hover a {
+  color: #FF8B00;
 }
 
 /*
