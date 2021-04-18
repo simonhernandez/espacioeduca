@@ -9,6 +9,11 @@
     box-shadow: var(--bxs-card);
     border-radius: 12px;
 
+    &:hover{
+        background-color: setBackgroundColor(card-bg-hover);
+        color: setTextColor(card-text-hover);
+    }
+
     &__icon{
         width: 64px;
         height: 64px;
@@ -25,6 +30,18 @@
         text-align: center;
         .heading{
             margin-bottom: var(--space-1-xx);
+        }
+    }
+
+    @include breakpoint-up(medium){
+
+        &__icon{
+            margin-left: initial;
+            margin-right: initial;
+        }
+
+        &__text{
+            text-align: initial;
         }
     }
 }

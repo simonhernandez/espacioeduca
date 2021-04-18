@@ -626,6 +626,10 @@ body {
   border-radius: 12px;
 }
 
+.card:hover {
+  background-color: set;
+}
+
 .card__icon {
   width: 64px;
   height: 64px;
@@ -657,6 +661,16 @@ body {
 
 .card__text .heading {
   margin-bottom: var(--space-1-xx);
+}
+
+@media screen and (min-width: 640px) {
+  .card__icon {
+    margin-left: initial;
+    margin-right: initial;
+  }
+  .card__text {
+    text-align: initial;
+  }
 }
 
 /*
