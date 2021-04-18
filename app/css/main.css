@@ -257,7 +257,7 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 640px) {
   .heading--bottom-line-orange::before, .heading--bottom-line-white::before {
     margin: initial;
   }

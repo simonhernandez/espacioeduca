@@ -98,7 +98,7 @@ body{
     &--bottom-line-orange,
     &--bottom-line-white{
         &::before{
-            @include breakpoint-up(large){
+            @include breakpoint-up(medium){
                 margin: initial;
             }
         }
