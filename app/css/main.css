@@ -627,7 +627,8 @@ body {
 }
 
 .card:hover {
-  background-color: set;
+  background-color: #FF8B00;
+  color: #FFF;
 }
 
 .card__icon {
