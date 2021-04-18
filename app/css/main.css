@@ -335,6 +335,8 @@ body {
   display: inline-block;
   padding: calc(var(--space-1) * .875) var(--space-2-xxx);
   border-radius: var(--button-border-radius);
+  -webkit-transition: .125s ease-in all;
+  transition: .125s ease-in all;
 }
 
 .btn--primary {
@@ -345,8 +347,8 @@ body {
 }
 
 .btn--primary:hover, .btn--primary:focus {
-  background-color: var(--color-bg-cta-hover);
-  color: var(--color-text-white);
+  background-color: #FFF;
+  color: #FF8B00;
 }
 
 .btn--secondary {
@@ -355,8 +357,8 @@ body {
 }
 
 .btn--secondary:hover, .btn--secondary:focus {
-  background-color: var(--color-bg-cta-hover);
-  color: var(--color-text-white);
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #FF8B00;
 }
 
 /*

@@ -8,6 +8,7 @@
     display: inline-block;
     padding: calc(var(--space-1) * .875) var(--space-2-xxx);
     border-radius: var(--button-border-radius);
+    transition: .125s ease-in all;
 
     &--primary{
         background-color: setBackgroundColor(btn-primary);
@@ -16,8 +17,8 @@
 
         &:hover,
         &:focus{
-            background-color: var(--color-bg-cta-hover);
-            color: var(--color-text-white);
+            background-color: setBackgroundColor(btn-primary-hover);
+            color: setTextColor(btn-primary-hover);
         }
     }
 
@@ -27,8 +28,8 @@
 
         &:hover,
         &:focus{
-            background-color: var(--color-bg-cta-hover);
-            color: var(--color-text-white);
+            background-color: setBackgroundColor(btn-secondary-hover);
+            color: setTextColor(btn-secondary-hover);
         }
     }
 
