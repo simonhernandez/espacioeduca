@@ -24,14 +24,6 @@
         @include background-image('../../../assets/images/shape-circle-hero.svg', center top, cover)
     }
 
-    &::after{
-        top: 100%;
-        right: 0;
-        width: 145px;
-        height: 65px;
-        @include background-image('../../../assets/images/shape-dots-blue.svg', center top, cover)
-    }
-
     &__text-container{
         max-width: 528px;
         text-align: center;
