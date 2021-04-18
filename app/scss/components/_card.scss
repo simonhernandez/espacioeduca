@@ -10,8 +10,8 @@
     border-radius: 12px;
 
     &:hover{
-        background-color: setBackgroundColor(card-bg-hover);
-        color: setTextColor(card-text-hover);
+        background-color: setBackgroundColor(card-hover);
+        color: setTextColor(card-hover);
     }
 
     &__icon{
