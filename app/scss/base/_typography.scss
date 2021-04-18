@@ -95,6 +95,14 @@ body{
             margin: 0 auto;
         }
     }
+    &--bottom-line-orange,
+    &--bottom-line-white{
+        &::before{
+            @include breakpoint-up(large){
+                margin: initial;
+            }
+        }
+    }
     &--bottom-line-blue{
         &::before{
             background-color: $blue;

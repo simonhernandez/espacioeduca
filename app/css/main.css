@@ -257,6 +257,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1024px) {
+  .heading--bottom-line-orange::before, .heading--bottom-line-white::before {
+    margin: initial;
+  }
+}
+
 .heading--bottom-line-blue::before {
   background-color: #5BB0E0;
 }
