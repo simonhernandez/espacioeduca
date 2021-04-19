@@ -133,10 +133,17 @@
 
         &__quote-list{
             grid-area: list;
+            justify-content: space-between;
         }
 
         &__quote-item{
             max-width: 400px;
+            transition: .25s ease-out transform;
+
+            &:hover{
+                transform: translateY(-20px);
+            }
         }
+
     }
 }

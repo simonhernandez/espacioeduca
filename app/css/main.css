@@ -1535,9 +1535,18 @@ body {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: list;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .team__quote-item {
     max-width: 400px;
+    -webkit-transition: .25s ease-out transform;
+    transition: .25s ease-out transform;
+  }
+  .team__quote-item:hover {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
 }
 
