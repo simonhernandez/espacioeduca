@@ -1433,6 +1433,34 @@ body {
   margin-bottom: var(--space-1-x);
 }
 
+.team__text-container .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.team__text-container .social__item {
+  color: rgba(38, 39, 41, 0.7);
+}
+
+.team__text-container .social__item:hover {
+  color: #FF8B00;
+}
+
+.team__text-container .social > *:not(:last-child) {
+  margin-right: var(--space-0-xx);
+}
+
 .team__quote-list > *:not(:last-child) {
   margin-bottom: var(--space-1-xx);
 }

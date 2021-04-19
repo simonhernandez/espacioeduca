@@ -41,6 +41,22 @@
         > *:not(:last-child){
             margin-bottom: var(--space-1-x);
         }
+
+        .social{
+            @include flex(fs, c, row);
+            
+            &__item{
+                color: $gray;
+
+                &:hover{
+                    color: $orange;
+                }
+            }
+
+            > *:not(:last-child){
+                margin-right: var(--space-0-xx);
+            }
+        }
     }
 
     &__quote-list{
