@@ -780,7 +780,7 @@ body {
 .header {
   position: relative;
   z-index: var(--z-normal);
-  background-color: #FFF;
+  background-color: transparent;
   color: #333950;
 }
 
