@@ -1,5 +1,43 @@
 /*
     ------------------------
+    ------ Animations ------
+    ------------------------
+*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+.shape--home-1::before, .shape--home-2::before {
+  -webkit-animation: spin 12s infinite linear;
+          animation: spin 12s infinite linear;
+}
+
+.shape--signup-1::before, .shape--signup-2::before {
+  -webkit-animation: spin 12s infinite linear;
+          animation: spin 12s infinite linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+/*
+    ------------------------
     ------- Mixins ---------
     ------------------------
 */
@@ -8,7 +46,6 @@
     ------ Utilities -------
     ------------------------
 */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 @media screen and (max-width: 1023px) {
   .hide-for-mobile {
     display: none !important;

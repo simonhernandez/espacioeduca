@@ -1,0 +1,34 @@
+/*
+    ------------------------
+    ------ Animations ------
+    ------------------------
+*/
+
+.shape{
+    &--home{
+        &-1,
+        &-2{
+            &::before{
+                animation: spin 12s infinite linear;
+            }
+        }
+    }
+    &--signup{
+        &-1,
+        &-2{
+            &::before{
+                animation: spin 12s infinite linear;
+            }
+        }
+    }
+}
+
+// Spin Animation
+@keyframes spin {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
