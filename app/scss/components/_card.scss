@@ -9,6 +9,7 @@
     box-shadow: var(--bxs-card);
     border-radius: 12px;
     transition: .125s ease-in all;
+    background-color: $white;
 
     &:hover{
         background-color: setBackgroundColor(card-hover);

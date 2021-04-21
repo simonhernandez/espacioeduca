@@ -664,6 +664,7 @@ body {
   border-radius: 12px;
   -webkit-transition: .125s ease-in all;
   transition: .125s ease-in all;
+  background-color: #FFF;
 }
 
 .card:hover {
