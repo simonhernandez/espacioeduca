@@ -16,6 +16,7 @@ $white: #FFF;
 $dim-white: rgba(255, 255, 255, .7);
 $space-cadet: #333950;
 $dark-jungle-green: #11272B;
+$dark-green: #173840;
 $gray: rgba(38, 39, 41, .7);
 
 $colors : (
@@ -93,6 +94,10 @@ $colors : (
     ),
     footer : (
         background: $dark-jungle-green,
+        text: $white
+    ),
+    attributions : (
+        background: $dark-green,
         text: $white
     ),
 );
