@@ -16,4 +16,12 @@
             margin-top: var(--space-4-xx);
         }
     }
+
+    @include breakpoint-up(large){
+        &--home{
+            section.hero{
+                margin-top: initial;
+            }
+        }
+    }
 }

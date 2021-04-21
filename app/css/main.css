@@ -762,13 +762,13 @@ body {
 
 @media screen and (min-width: 1024px) {
   .wrapper {
-    max-width: 1320px;
+    max-width: 1140px;
   }
 }
 
 @media screen and (min-width: 1460px) {
   .wrapper {
-    max-width: 1400px;
+    max-width: 1320px;
   }
 }
 
@@ -1255,23 +1255,48 @@ body {
     row-gap: var(--space-6-xx);
   }
   .about__image-container {
-    max-width: 563px;
+    max-width: 556px;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: img;
     margin: initial;
     margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .about__text-container {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: text;
+    margin-bottom: initial;
   }
   .about__list {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: list;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .about__list {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .about__item {
+    max-width: 380px;
   }
 }
 
@@ -1601,18 +1626,22 @@ body {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: list;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    /* justify-content: space-between; */
   }
   .team__quote-item {
-    max-width: 400px;
+    max-width: 340px;
     -webkit-transition: .25s ease-out transform;
     transition: .25s ease-out transform;
   }
   .team__quote-item:hover {
     -webkit-transform: translateY(-20px);
             transform: translateY(-20px);
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-width: 1460px) {
+  .team__quote-item {
+    max-width: 400px;
   }
 }
 
@@ -1826,5 +1855,11 @@ body {
 
 .main--home section.hero {
   margin-top: var(--space-4-xx);
+}
+
+@media screen and (min-width: 1024px) {
+  .main--home section.hero {
+    margin-top: initial;
+  }
 }
 /*# sourceMappingURL=main.css.map */

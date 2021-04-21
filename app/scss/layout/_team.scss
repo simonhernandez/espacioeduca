@@ -149,11 +149,11 @@
 
         &__quote-list{
             grid-area: list;
-            justify-content: space-between;
+            /* justify-content: space-between; */
         }
 
         &__quote-item{
-            max-width: 400px;
+            max-width: 340px;
             transition: .25s ease-out transform;
 
             &:hover{
@@ -161,5 +161,10 @@
             }
         }
 
+        @include breakpoint-up(xlarge){
+            &__quote-item{
+                max-width: 400px;
+            }
+        }
     }
 }
