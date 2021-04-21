@@ -34,9 +34,9 @@
                     background-color: $blue;
                     position: absolute;
                     width: 10px;
-                    height: calc(100% + var(--space-3-xx));
-                    top: 0;
-                    left: 24px;
+                    height: 130%;
+                    top: 24px;
+                    left: 46px;
                 }
             }
         }
@@ -93,15 +93,15 @@
                 }
 
                 &::before{
-                    top: 24px;
+                    top: 44px;
                     left: -1000%;
                     width: 1000%;
                 }
 
                 &::after{
-                    top: 24px;
+                    top: 44px;
                     left: 0;
-                    width: 102%;
+                    width: 120%;
                 }
             }
 
@@ -114,9 +114,9 @@
                     box-shadow: var(--bxs-line);
                     z-index: -1;
                     height: 10px;
-                    top: 24px;
+                    top: 44px;
                     left: -1000%;
-                    width: 1000%;
+                    width: 1020%;
                 }
             }
         }
@@ -141,9 +141,9 @@
                     box-shadow: var(--bxs-line);
                     z-index: -1;
                     height: 10px;
-                    top: 24px;
+                    top: 44px;
                     left: 0;
-                    width: 100%;
+                    width: 120%;
                 }
             }
             &:last-of-type{

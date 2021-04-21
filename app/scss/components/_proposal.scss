@@ -6,11 +6,21 @@
 
 .proposal{
     @include flex(fs, fs, row);
+    padding: var(--space-1-xx);
+    border-radius: 12px;
+    transition: .125s ease-in all;
+    
+    &:hover{
+        box-shadow: var(--bxs-card);
+        background-color: setBackgroundColor(proposal-hover);
+        color: setTextColor(proposal-hover);
+    }
 
     &__number{
         display: inline-block;
         background-color: setBackgroundColor(icon-blue);
         color: setTextColor(icon-blue);
+        box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
         width: 56px;
         height: 56px;
         border-radius: 50%;
@@ -29,7 +39,7 @@
 
     @include breakpoint-up(medium){
         @include flex(fs, fs, column);
-        max-width: 317px;
+        max-width: 340px;
 
         &__number{
             margin-bottom: var(--space-2-x);
