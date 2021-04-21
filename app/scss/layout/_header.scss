@@ -18,6 +18,7 @@
             @include flex(fs, c, row);
             img{
                 max-width: 2rem;
+                margin-right: var(--space-1);
             }
             span{
                 font-size: 1.125rem;

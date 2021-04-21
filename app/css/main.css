@@ -833,6 +833,7 @@ body {
 
 .header .nav__logo img {
   max-width: 2rem;
+  margin-right: var(--space-1);
 }
 
 .header .nav__logo span {
