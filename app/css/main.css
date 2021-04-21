@@ -106,6 +106,8 @@ button {
 input,
 textarea {
   border: none;
+  outline: none;
+  font-size: inherit;
   font-family: inherit;
 }
 
