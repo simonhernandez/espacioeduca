@@ -56,8 +56,6 @@
         .nav,
         .social{
             padding: 0 var(--space-2-xx);
-            display: flex;
-            margin: 0 auto;
         }
         
 
@@ -73,6 +71,8 @@
         .nav{
             grid-area: nav;
             text-align: left;
+            display: flex;
+            margin: 0 auto;
         }
     }
 

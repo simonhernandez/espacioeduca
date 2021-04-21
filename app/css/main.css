@@ -984,10 +984,6 @@ body {
   .footer .nav,
   .footer .social {
     padding: 0 var(--space-2-xx);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0 auto;
   }
   .footer .brand {
     -ms-grid-row: 2;
@@ -1018,6 +1014,10 @@ body {
     -ms-grid-column: 1;
     grid-area: nav;
     text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
   }
 }
 
