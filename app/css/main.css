@@ -867,6 +867,9 @@ body {
 }
 
 @media screen and (min-width: 640px) {
+  .header .nav__logo img {
+    max-width: 3rem;
+  }
   .header .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1038,6 +1041,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .footer .brand__logo img {
+    max-width: 3rem;
   }
   .footer .nav__list {
     display: -webkit-box;

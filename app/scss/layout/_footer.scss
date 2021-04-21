@@ -84,6 +84,9 @@
         .brand{
             &__logo{
                 @include flex(fs, c, row);
+                img{
+                    max-width: 3rem;
+                }
             }
         }
 

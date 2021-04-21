@@ -57,6 +57,12 @@
     @include breakpoint-up(medium){
 
         .nav{
+
+            &__logo{
+                img{
+                    max-width: 3rem;
+                }
+            }
             &__list{
                 @include flex(sb, c, row);
             }
