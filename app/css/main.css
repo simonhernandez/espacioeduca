@@ -416,7 +416,7 @@ body {
 .form textarea {
   padding: var(--space-0-x) var(--space-0-xx);
   background-color: #FFF;
-  color: rgba(38, 39, 41, 0.7);
+  color: #333950;
   border-radius: .25rem;
   width: 100%;
 }
