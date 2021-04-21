@@ -6,6 +6,7 @@
 
 .about{
     position: relative;
+    z-index: -10;
     overflow: hidden;
     background-color: setBackgroundColor(section-about);
     color: setTextColor(section-about);
@@ -16,6 +17,7 @@
         content: '';
         position: absolute;
         display: block;
+        z-index: -1;
     }
 
     &::before{

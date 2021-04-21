@@ -1149,6 +1149,7 @@ body {
 */
 .about {
   position: relative;
+  z-index: -10;
   overflow: hidden;
   background-color: #FFF;
   color: #333950;
@@ -1159,6 +1160,7 @@ body {
   content: '';
   position: absolute;
   display: block;
+  z-index: -1;
 }
 
 .about::before {
