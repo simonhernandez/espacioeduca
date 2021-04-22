@@ -43,7 +43,7 @@
         }
 
         .social{
-            @include flex(fs, c, row);
+            @include flex(c, c, row);
             
             &__item{
                 color: $gray;
@@ -116,6 +116,10 @@
         &__quote-item{
             flex: 1 1 auto;
             margin: 14px 0 0 14px;
+        }
+
+        .social{
+            justify-content: flex-start;
         }
     }
 
