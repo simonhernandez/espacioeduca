@@ -37,7 +37,7 @@
 
     // Media Queries
 
-    @include breakpoint-up(medium){
+    @media screen and (min-width: 748px){
         @include flex(fs, fs, column);
         max-width: 340px;
 

@@ -554,7 +554,7 @@ body {
   margin-bottom: var(--space-0-xx);
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 748px) {
   .proposal {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1358,7 +1358,7 @@ body {
   max-width: 350px;
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 747px) {
   .proposals__item:not(:last-of-type)::before {
     content: '';
     display: block;
@@ -1372,7 +1372,7 @@ body {
   }
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 748px) {
   .proposals {
     position: relative;
   }
@@ -1454,7 +1454,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1100px) {
   .proposals {
     padding: var(--space-5-xx) 0;
   }

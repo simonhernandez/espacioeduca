@@ -25,7 +25,7 @@
         position: relative;
         max-width: 350px;
 
-        @include breakpoint-down(small){
+        @media screen and (max-width: 747px){
             &:not(:last-of-type){
                 &::before{
                     content: '';
@@ -44,7 +44,7 @@
 
     // Media Queries
 
-    @include breakpoint-up(medium){
+    @media screen and (min-width: 748px){
         position: relative;
 
         &::before{
@@ -122,7 +122,7 @@
         }
     }
 
-    @include breakpoint-up(large){
+    @media screen and (min-width: 1100px){
         padding: var(--space-5-xx) 0;
 
         &::before{
