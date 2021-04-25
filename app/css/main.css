@@ -1094,20 +1094,6 @@ body {
   padding-bottom: var(--space-2-xx);
 }
 
-.hero::before, .hero::after {
-  content: '';
-  position: absolute;
-  display: block;
-}
-
-.hero::before {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 600px;
-  background: url(../../../assets/images/shape-circle-hero.svg) center top/cover no-repeat;
-}
-
 .hero__text-container {
   max-width: 528px;
   text-align: center;
@@ -1126,9 +1112,6 @@ body {
 }
 
 @media screen and (min-width: 640px) {
-  .hero::before {
-    height: 874px;
-  }
   .hero__text-container {
     text-align: initial;
     margin-bottom: initial;
@@ -1156,10 +1139,6 @@ body {
             flex-direction: row;
     padding: var(--space-3-x) 0;
   }
-  .hero::before {
-    width: 657px;
-    height: 747px;
-  }
   .hero__image-container {
     max-width: 563px;
   }
@@ -1176,20 +1155,6 @@ body {
   padding: var(--space-2-xx) 0;
 }
 
-.sponsors::before, .sponsors::after {
-  content: '';
-  position: absolute;
-  display: block;
-}
-
-.sponsors::before {
-  top: -75px;
-  right: 0;
-  width: 145px;
-  height: 65px;
-  background: url(../../../assets/images/shape-dots-blue.svg) center top/cover no-repeat;
-}
-
 /*
     ------------------------
     -------- About ---------
@@ -1201,28 +1166,6 @@ body {
   background-color: #FFF;
   color: #333950;
   padding: var(--space-2-xx) 0;
-}
-
-.about::before, .about::after {
-  content: '';
-  position: absolute;
-  display: block;
-}
-
-.about::before {
-  top: 0;
-  left: 0;
-  width: 145px;
-  height: 65px;
-  background: url(../../../assets/images/shape-dots-blue.svg) center top/cover no-repeat;
-}
-
-.about::after {
-  bottom: -300px;
-  right: -300px;
-  width: 712px;
-  height: 712px;
-  background: url(../../../assets/images/shape-circle-gray.svg) center top/cover no-repeat;
 }
 
 .about__image-container {
@@ -1397,16 +1340,6 @@ body {
   .proposals {
     position: relative;
   }
-  .proposals::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -150px;
-    width: 533px;
-    height: 533px;
-    background: url(../../../assets/images/shape-circle-gray.svg) center top/cover no-repeat;
-  }
   .proposals__text-container {
     max-width: 513px;
   }
@@ -1479,10 +1412,6 @@ body {
   .proposals {
     padding: var(--space-5-xx) 0;
   }
-  .proposals::before {
-    bottom: 0;
-    margin: auto 0;
-  }
   .proposals__item:nth-of-type(2) {
     position: relative;
   }
@@ -1515,20 +1444,6 @@ body {
   background-color: #FFF;
   color: #333950;
   padding: var(--space-2-xx) 0;
-}
-
-.team::before, .team::after {
-  content: '';
-  position: absolute;
-  display: block;
-}
-
-.team::before {
-  top: 0;
-  left: 0;
-  width: 145px;
-  height: 65px;
-  background: url(../../../assets/images/shape-dots-blue.svg) center top/cover no-repeat;
 }
 
 .team__image-container {
@@ -1586,18 +1501,6 @@ body {
 }
 
 @media screen and (min-width: 640px) {
-  .team {
-    position: relative;
-  }
-  .team::after {
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    right: -40%;
-    width: 712px;
-    height: 712px;
-    background: url(../../../assets/images/shape-circle-gray.svg) center top/cover no-repeat;
-  }
   .team__image-container {
     max-width: 488px;
     margin: initial;
@@ -1659,12 +1562,6 @@ body {
             column-gap: var(--space-4);
     row-gap: var(--space-6-xx);
   }
-  .team::after {
-    top: -300px;
-    right: -300px;
-    bottom: initial;
-    margin: initial;
-  }
   .team__image-container {
     max-width: 563px;
     -ms-grid-row: 1;
@@ -1715,18 +1612,10 @@ body {
   color: #333950;
 }
 
-.contact::before, .contact::after {
+.contact::after {
   content: '';
   position: absolute;
   display: block;
-}
-
-.contact::before {
-  top: 0;
-  left: 0;
-  width: 145px;
-  height: 65px;
-  background: url(../../../assets/images/shape-dots-blue.svg) center top/cover no-repeat;
 }
 
 .contact::after {
@@ -1744,20 +1633,6 @@ body {
   color: #FFF;
   border-radius: 15px;
   padding: var(--space-2) var(--space-1-xx);
-}
-
-.contact__card::before {
-  content: '';
-  display: block;
-  position: absolute;
-  z-index: var(--z-back);
-  top: 50px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 100%;
-  height: 720px;
-  background: url(../../../assets/images/shape-circle-white.svg) center top/cover no-repeat;
 }
 
 .contact__text-container {

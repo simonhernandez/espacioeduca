@@ -11,21 +11,6 @@
     color: setTextColor(section-about);
     padding: var(--space-2-xx) 0;
 
-    &::before,
-    &::after{
-        content: '';
-        position: absolute;
-        display: block;
-    }
-
-    &::before{
-        top: 0;
-        left: 0;
-        width: 145px;
-        height: 65px;
-        @include background-image('../../../assets/images/shape-dots-blue.svg', center top, cover)
-    }
-
     &__image-container{
         position: relative;
         z-index: var(--z-normal);
@@ -73,17 +58,6 @@
     // Media Queries
 
     @include breakpoint-up(medium){
-        position: relative;
-
-        &::after{
-            top: 0;
-            bottom: 0;
-            margin: auto 0;
-            right: -40%;
-            width: 712px;
-            height: 712px;
-            @include background-image('../../../assets/images/shape-circle-gray.svg', center top, cover);
-        }
 
         &__image-container{
             max-width: 488px;
@@ -131,13 +105,6 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: var(--space-4);
         row-gap: var(--space-6-xx);
-
-        &::after{
-            top: -300px;
-            right: -300px;
-            bottom: initial;
-            margin: initial;
-        }
 
         &__image-container{
             max-width: 563px;

@@ -8,19 +8,4 @@
     position: relative;
     background-color: setBackgroundColor(section-sponsors);
     padding: var(--space-2-xx) 0;
-
-    &::before,
-    &::after{
-        content: '';
-        position: absolute;
-        display: block;
-    }
-
-    &::before{
-        top: -75px;
-        right: 0;
-        width: 145px;
-        height: 65px;
-        @include background-image('../../../assets/images/shape-dots-blue.svg', center top, cover)
-    }
 }

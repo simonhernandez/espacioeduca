@@ -10,19 +10,10 @@
     background-color: setBackgroundColor(section-contact);
     color: setTextColor(section-contact);
 
-    &::before,
     &::after{
         content: '';
         position: absolute;
         display: block;
-    }
-
-    &::before{
-        top: 0;
-        left: 0;
-        width: 145px;
-        height: 65px;
-        @include background-image('../../../assets/images/shape-dots-blue.svg', center top, cover)
     }
 
     &::after{
@@ -40,20 +31,6 @@
         color: setTextColor(contact-card);
         border-radius: 15px;
         padding: var(--space-2) var(--space-1-xx);
-
-        &::before{
-            content: '';
-            display: block;
-            position: absolute;
-            z-index: var(--z-back);
-            top: 50px;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            width: 100%;
-            height: 720px;
-            @include background-image('../../../assets/images/shape-circle-white.svg', center top, cover);
-        }
     }
 
     &__text-container{
