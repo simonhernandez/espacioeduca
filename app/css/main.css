@@ -736,6 +736,27 @@ body {
 
 /*
     ------------------------
+    --------- Shape --------
+    ------------------------
+*/
+.shape {
+  position: absolute;
+}
+
+.shape--hero {
+  width: 1134px;
+}
+
+.shape--dots-blue, .shape--dots-orange {
+  width: 180px;
+}
+
+.shape--circle {
+  width: 712px;
+}
+
+/*
+    ------------------------
     ------- Wrapper --------
     ------------------------
 */

@@ -1,0 +1,22 @@
+/*
+    ------------------------
+    --------- Shape --------
+    ------------------------
+*/
+
+.shape{
+    position: absolute;
+
+    &--hero{
+        width: 1134px;
+    }
+
+    &--dots-blue,
+    &--dots-orange{
+        width: 180px;
+    }
+
+    &--circle{
+        width: 712px;
+    }
+}
