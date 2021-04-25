@@ -1818,6 +1818,53 @@ body {
   margin-top: var(--space-4-xx);
 }
 
+.main--home section.hero .shape--hero {
+  top: 0;
+  left: -20px;
+}
+
+.main--home section.hero .shape--dots-blue {
+  bottom: 0;
+  right: 0;
+}
+
+.main--home section.about .shape--dots-blue {
+  top: 0;
+  left: 0;
+}
+
+.main--home section.about .shape--circle-gray {
+  bottom: -300px;
+  right: -200px;
+}
+
+.main--home section.proposals .shape--dots-orange {
+  top: 0;
+  right: 0;
+}
+
+.main--home section.proposals .shape--circle-gray {
+  top: 0;
+  bottom: 0;
+  left: -162px;
+  margin: auto 0;
+}
+
+.main--home section.team .shape--circle-gray {
+  top: -300px;
+  right: -162px;
+}
+
+.main--home section.contact .shape--dots-blue {
+  top: 0;
+  left: 0;
+}
+
+.main--home section.contact .contact__card .shape--circle-white {
+  top: 50px;
+  left: -162px;
+}
+
 @media screen and (min-width: 1024px) {
   .main--home section.hero {
     margin-top: initial;
