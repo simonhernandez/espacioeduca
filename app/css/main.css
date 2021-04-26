@@ -4,14 +4,14 @@
     ------------------------
 */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
-.shape--home-1::before, .shape--home-2::before {
+.shape--hero object {
   -webkit-animation: spin 12s infinite linear;
           animation: spin 12s infinite linear;
 }
 
-.shape--signup-1::before, .shape--signup-2::before {
-  -webkit-animation: spin 12s infinite linear;
-          animation: spin 12s infinite linear;
+.hero__image-container object {
+  -webkit-animation: float 3s infinite ease-in-out;
+          animation: float 3s infinite ease-in-out;
 }
 
 @-webkit-keyframes spin {
@@ -33,6 +33,36 @@
   to {
     -webkit-transform: rotate(359deg);
             transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 

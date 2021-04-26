@@ -5,20 +5,17 @@
 */
 
 .shape{
-    &--home{
-        &-1,
-        &-2{
-            &::before{
-                animation: spin 12s infinite linear;
-            }
+    &--hero{
+        object{
+            animation: spin 12s infinite linear;
         }
     }
-    &--signup{
-        &-1,
-        &-2{
-            &::before{
-                animation: spin 12s infinite linear;
-            }
+}
+
+.hero{
+    &__image-container{
+        object{
+            animation: float 3s infinite ease-in-out;
         }
     }
 }
@@ -30,5 +27,16 @@
     }
     to{
         transform: rotate(359deg);
+    }
+}
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0);
     }
 }
