@@ -1845,6 +1845,15 @@ body {
   right: 0;
 }
 
+.main--home section.sponsors {
+  position: relative;
+}
+
+.main--home section.sponsors .shape--dots-blue {
+  top: -82px;
+  right: 0;
+}
+
 .main--home section.about {
   position: relative;
 }
