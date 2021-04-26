@@ -744,15 +744,32 @@ body {
 }
 
 .shape--hero {
-  width: 1134px;
+  width: 100%;
+  height: 100%;
+}
+
+.shape--hero object svg {
+  width: 874px;
 }
 
 .shape--dots-blue, .shape--dots-orange {
-  width: 180px;
+  width: 145px;
 }
 
-.shape--circle {
-  width: 712px;
+.shape--circle-gray, .shape--circle-white {
+  width: 400px;
+}
+
+@media screen and (min-width: 1024px) {
+  .shape--hero {
+    width: 1134px;
+  }
+  .shape--dots-blue, .shape--dots-orange {
+    width: 180px;
+  }
+  .shape--circle-gray, .shape--circle-white {
+    width: 712px;
+  }
 }
 
 /*
@@ -1819,13 +1836,17 @@ body {
 }
 
 .main--home section.hero .shape--hero {
-  top: -300px;
-  left: -369px;
+  top: -100px;
+  left: -200px;
 }
 
 .main--home section.hero .shape--dots-blue {
   bottom: 0;
   right: 0;
+}
+
+.main--home section.about {
+  position: relative;
 }
 
 .main--home section.about .shape--dots-blue {
@@ -1834,8 +1855,12 @@ body {
 }
 
 .main--home section.about .shape--circle-gray {
-  bottom: -300px;
+  bottom: -100px;
   right: -200px;
+}
+
+.main--home section.proposals {
+  position: relative;
 }
 
 .main--home section.proposals .shape--dots-orange {
@@ -1844,15 +1869,21 @@ body {
 }
 
 .main--home section.proposals .shape--circle-gray {
-  top: 0;
-  bottom: 0;
+  top: 450px;
   left: -162px;
-  margin: auto 0;
+}
+
+.main--home section.team {
+  position: relative;
 }
 
 .main--home section.team .shape--circle-gray {
-  top: -300px;
+  top: -100px;
   right: -162px;
+}
+
+.main--home section.contact {
+  position: relative;
 }
 
 .main--home section.contact .shape--dots-blue {
@@ -1861,13 +1892,71 @@ body {
 }
 
 .main--home section.contact .contact__card .shape--circle-white {
+  position: absolute;
+  z-index: var(--z-back);
   top: 50px;
-  left: -162px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 640px) {
+  .main--home section.about .shape--circle-gray {
+    bottom: 700px;
+  }
+  .main--home section.proposals .shape--circle-gray {
+    top: 300px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  .main--home section.hero {
-    margin-top: initial;
+  .main--home section.hero .shape--hero {
+    top: -300px;
+    left: -419px;
+  }
+  .main--home section.hero .shape--dots-blue {
+    bottom: 0;
+    right: 0;
+  }
+  .main--home section.about {
+    position: relative;
+  }
+  .main--home section.about .shape--dots-blue {
+    top: 0;
+    left: 0;
+  }
+  .main--home section.about .shape--circle-gray {
+    bottom: -300px;
+    right: -200px;
+  }
+  .main--home section.proposals {
+    position: relative;
+  }
+  .main--home section.proposals .shape--dots-orange {
+    top: 0;
+    right: 0;
+  }
+  .main--home section.proposals .shape--circle-gray {
+    top: 0;
+    bottom: 0;
+    left: -162px;
+    margin: auto 0;
+  }
+  .main--home section.team {
+    position: relative;
+  }
+  .main--home section.team .shape--circle-gray {
+    top: -300px;
+    right: -162px;
+  }
+  .main--home section.contact .shape--dots-blue {
+    top: 0;
+    left: 0;
+  }
+  .main--home section.contact .contact__card .shape--circle-white {
+    top: 50px;
+    left: -162px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -16,8 +16,8 @@
             margin-top: var(--space-4-xx);
 
             .shape--hero{
-                top: -300px;
-                left: -369px;
+                top: -100px;
+                left: -200px;
             }
 
             .shape--dots-blue{
@@ -27,40 +27,41 @@
         }
 
         section.about{
+            position: relative;
             .shape--dots-blue{
                 top: 0;
                 left: 0;
             }
 
             .shape--circle-gray{
-                bottom: -300px;
+                bottom: -100px;
                 right: -200px;
             }
         }
 
         section.proposals{
+            position: relative;
             .shape--dots-orange{
                 top: 0;
                 right: 0;
             }
 
             .shape--circle-gray{
-                top: 0;
-                bottom: 0;
+                top: 450px;
                 left: -162px;
-                margin: auto 0;
             }
         }
 
         section.team{
-
+            position: relative;
             .shape--circle-gray{
-                top: -300px;
+                top: -100px;
                 right: -162px;
             }
         }
 
         section.contact{
+            position: relative;
             .shape--dots-blue{
                 top: 0;
                 left: 0;
@@ -68,8 +69,30 @@
 
             .contact__card{
                 .shape--circle-white{
+                    position: absolute;
+                    z-index: var(--z-back);
                     top: 50px;
-                    left: -162px;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    @include breakpoint-up(medium){
+        &--home{
+
+            section.about{
+                .shape--circle-gray{
+                    bottom: 700px;
+                }
+            }
+    
+            section.proposals{
+                .shape--circle-gray{
+                    top: 300px;
                 }
             }
         }
@@ -78,7 +101,66 @@
     @include breakpoint-up(large){
         &--home{
             section.hero{
-                margin-top: initial;
+
+                .shape--hero{
+                    top: -300px;
+                    left: -419px;
+                }
+    
+                .shape--dots-blue{
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+    
+            section.about{
+                position: relative;
+                .shape--dots-blue{
+                    top: 0;
+                    left: 0;
+                }
+    
+                .shape--circle-gray{
+                    bottom: -300px;
+                    right: -200px;
+                }
+            }
+    
+            section.proposals{
+                position: relative;
+                .shape--dots-orange{
+                    top: 0;
+                    right: 0;
+                }
+    
+                .shape--circle-gray{
+                    top: 0;
+                    bottom: 0;
+                    left: -162px;
+                    margin: auto 0;
+                }
+            }
+    
+            section.team{
+                position: relative;
+                .shape--circle-gray{
+                    top: -300px;
+                    right: -162px;
+                }
+            }
+    
+            section.contact{
+                .shape--dots-blue{
+                    top: 0;
+                    left: 0;
+                }
+    
+                .contact__card{
+                    .shape--circle-white{
+                        top: 50px;
+                        left: -162px;
+                    }
+                }
             }
         }
     }

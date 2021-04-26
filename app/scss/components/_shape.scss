@@ -8,15 +8,39 @@
     position: absolute;
 
     &--hero{
-        width: 1134px;
+        width: 100%;
+        height: 100%;
+
+        object{
+            svg{
+                width: 874px;
+            }
+        }
     }
 
     &--dots-blue,
     &--dots-orange{
-        width: 180px;
+        width: 145px;
     }
 
-    &--circle{
-        width: 712px;
+    &--circle-gray,
+        &--circle-white{
+            width: 400px;
+        }
+
+    @include breakpoint-up(large){
+        &--hero{
+            width: 1134px;
+        }
+    
+        &--dots-blue,
+        &--dots-orange{
+            width: 180px;
+        }
+    
+        &--circle-gray,
+        &--circle-white{
+            width: 712px;
+        }
     }
 }
