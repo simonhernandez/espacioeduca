@@ -6,7 +6,7 @@
 
 .header{
     position: relative;
-    z-index: var(--z-normal);
+    z-index: var(--z-fixed);
     background-color: setBackgroundColor(header);
     color: setTextColor(header);
 
@@ -34,10 +34,14 @@
                 right: -80%;
                 width: 80%;
                 height: 100%;
-                background-color: var(--color-dark);
-                color: var(--color-white);
+                background-color: setBackgroundColor(header-mobile);
+                color: setTextColor(header-mobile);
                 padding: 2rem;
                 transition: all .25s ease-out;
+
+                > *:not(:last-child){
+                    margin-bottom: var(--space-1-x);
+                }
             }
         }
 

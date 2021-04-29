@@ -867,7 +867,7 @@ body {
 */
 .header {
   position: relative;
-  z-index: var(--z-normal);
+  z-index: var(--z-fixed);
   background-color: transparent;
   color: #333950;
 }
@@ -922,11 +922,14 @@ body {
     right: -80%;
     width: 80%;
     height: 100%;
-    background-color: var(--color-dark);
-    color: var(--color-white);
+    background-color: #11272B;
+    color: #FFF;
     padding: 2rem;
     -webkit-transition: all .25s ease-out;
     transition: all .25s ease-out;
+  }
+  .header .nav__list > *:not(:last-child) {
+    margin-bottom: var(--space-1-x);
   }
 }
 
