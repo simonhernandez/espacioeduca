@@ -88,6 +88,10 @@
   }
 }
 
+.show-mobile-menu {
+  right: 0 !important;
+}
+
 /*
     ------------------------
     ------- Resets ---------
