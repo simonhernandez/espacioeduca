@@ -36,6 +36,7 @@
                 height: 100%;
                 background-color: setBackgroundColor(header-mobile);
                 color: setTextColor(header-mobile);
+                backdrop-filter: blur(5px);
                 padding: 2rem;
                 transition: all .25s ease-out;
 
