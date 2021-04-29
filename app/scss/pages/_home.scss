@@ -5,7 +5,7 @@
 */
 
 .header{
-    margin-top: var(--space-3);
+    margin-top: var(--space-2);
 }
 
 .main{
@@ -107,6 +107,11 @@
     }
 
     @include breakpoint-up(large){
+
+        .header{
+            margin-top: var(--space-3);
+        }
+
         &--home{
             section.hero{
 

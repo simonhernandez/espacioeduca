@@ -1878,7 +1878,7 @@ body {
     ------------------------
 */
 .header {
-  margin-top: var(--space-3);
+  margin-top: var(--space-2);
 }
 
 .main {
@@ -1974,6 +1974,9 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  .main .header {
+    margin-top: var(--space-3);
+  }
   .main--home section.hero {
     margin-top: initial;
   }
