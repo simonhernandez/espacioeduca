@@ -390,7 +390,7 @@ body {
     -------- Icons ---------
     ------------------------
 */
-.bx-menu, .bx-target-lock {
+.bx-menu, .bx-target-lock, .bx-x {
   font-size: 2rem;
 }
 
