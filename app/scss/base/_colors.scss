@@ -92,16 +92,16 @@ $colors : (
         background: transparent,
         text: $space-cadet,
     ),
+    header-mobile : (
+        background: $dark-jungle-green,
+        text: $white
+    ),
     footer : (
         background: $dark-jungle-green,
         text: $white
     ),
     attributions : (
         background: $dark-green,
-        text: $white
-    ),
-    header-mobile : (
-        background: $dark-jungle-green,
         text: $white
     ),
 );
