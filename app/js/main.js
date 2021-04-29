@@ -7,6 +7,7 @@
 const navToggle = document.getElementById('nav-toggle');
 const navMenu = document.getElementById('nav-menu');
 const navItems = navMenu.querySelectorAll('.nav__item');
+const navToggleIcon = document.getElementById("nav-toggle-icon");
 
 const hamburgerIconClass = "bx-menu";
 const closeIconClass = "bx-x";
@@ -24,11 +25,11 @@ function toggleMenu(){
     navMenu.classList.toggle('show-mobile-menu');
 
     if (menuIsOpen){
-        navToggle.classList.remove(closeIconClass);
-        navToggle.classList.add(hamburgerIconClass);
+        navToggleIcon.classList.remove(closeIconClass);
+        navToggleIcon.classList.add(hamburgerIconClass);
     } else {
-        navToggle.classList.remove(hamburgerIconClass);
-        navToggle.classList.add(closeIconClass);
+        navToggleIcon.classList.remove(hamburgerIconClass);
+        navToggleIcon.classList.add(closeIconClass);
     }
 
     menuIsOpen = !menuIsOpen;
