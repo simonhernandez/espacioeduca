@@ -14,6 +14,7 @@ $very-dim-blue: rgba(91, 176, 224, .4);
 $cultured: #FAFAFA;
 $white: #FFF;
 $dim-white: rgba(255, 255, 255, .7);
+$very-dim-white: rgba(255, 255, 255, .3);
 $space-cadet: #333950;
 $dark-jungle-green: #11272B;
 $dark-green: #173840;
@@ -93,8 +94,8 @@ $colors : (
         text: $space-cadet,
     ),
     header-mobile : (
-        background: $dark-jungle-green,
-        text: $white
+        background: $very-dim-white,
+        text: $space-cadet
     ),
     footer : (
         background: $dark-jungle-green,
