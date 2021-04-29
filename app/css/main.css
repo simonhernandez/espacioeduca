@@ -226,7 +226,7 @@ address {
   /* Border Radius */
   --border-radius-menu: 5px;
   /* Header height */
-  --header-height: var(--space-2);
+  --header-height: 88.8px;
   /* Z Index */
   --z-back: -1;
   --z-normal:  1;
