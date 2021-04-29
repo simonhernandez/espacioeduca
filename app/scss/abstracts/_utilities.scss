@@ -22,3 +22,18 @@
     // Displays Mobile Menu when added with JS
     right: 0 !important;
 }
+
+.active-link{
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: .18rem;
+        background-color: #FF8B00;
+        top: 1.5rem;
+        left: 0;
+    }
+}
