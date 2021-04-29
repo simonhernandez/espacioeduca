@@ -12,6 +12,8 @@
     padding: var(--space-2-xx) 0;
 
     &__image-container{
+        position: relative;
+        z-index: var(--z-normal);
         max-width: 300px;
         margin: 0 auto;
         margin-bottom: var(--space-2-xxx);
